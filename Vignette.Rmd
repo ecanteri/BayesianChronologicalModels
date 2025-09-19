@@ -394,7 +394,7 @@ Given that our goal was to model the date of phases, we can extract this informa
 
 ```{r phase dating}
 # Import phases result tables
-phases_calib <- lapply(list.files("Vignette/Tables/SinglePhase/", pattern = "_phase.txt", full.names = T), read.delim)
+phases_calib <- lapply(list.files("./Tables/SinglePhase/", pattern = "_phase.txt", full.names = T), read.delim)
 
 # Check length of list
 length(phases_calib)
