@@ -1,0 +1,23 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median	YearType
+B_Start OZ	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+Lv-1691	7486	7324	7568	7267	Unmodelled	R_Date	Date	7411	79	7412	calBP
+Lv-1685	7420	7170	7470	7015	Unmodelled	R_Date	Date	7280	105	7289	calBP
+Lv-1688	7579	6802	7934	6452	Unmodelled	R_Date	Date	7209	369	7219	calBP
+Lv-1690	7419	7159	7427	6993	Unmodelled	R_Date	Date	7234	118	7244	calBP
+Lv-1607	7410	7025	7424	6977	Unmodelled	R_Date	Date	7199	122	7208	calBP
+Lv-1692	7256	7026	7305	6989	Unmodelled	R_Date	Date	7148	87	7163	calBP
+Lv-1689	7279	6884	7427	6675	Unmodelled	R_Date	Date	7074	192	7078	calBP
+Lv-1687	7249	6959	7319	6799	Unmodelled	R_Date	Date	7086	124	7086	calBP
+OZ	NA	NA	NA	NA	Unmodelled	Calculate	Date	NA	NA	NA	calBP
+B_End OZ	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+B_Start OZ	7405	7218	7565	7147	Modelled	Boundary	Date	7339	110	7323	calBP
+Lv-1691	7339	7181	7449	7109	Modelled	R_Date	Date	7271	82	7265	calBP
+Lv-1685	7321	7165	7415	7075	Modelled	R_Date	Date	7244	82	7243	calBP
+Lv-1688	7324	7148	7440	7015	Modelled	R_Date	Date	7232	100	7234	calBP
+Lv-1690	7314	7159	7407	7059	Modelled	R_Date	Date	7234	83	7236	calBP
+Lv-1607	7312	7154	7399	7049	Modelled	R_Date	Date	7227	84	7231	calBP
+Lv-1692	7303	7147	7374	7040	Modelled	R_Date	Date	7215	81	7220	calBP
+Lv-1689	7311	7143	7400	7012	Modelled	R_Date	Date	7216	93	7223	calBP
+Lv-1687	7302	7139	7377	7016	Modelled	R_Date	Date	7207	88	7215	calBP
+OZ	7324	7144	7449	7004	Modelled	Calculate	Date	7231	106	7234	calBP
+B_End OZ	7260	7058	7323	6869	Modelled	Boundary	Date	7122	120	7143	calBP

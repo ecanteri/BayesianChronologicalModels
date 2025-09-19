@@ -1,0 +1,19 @@
+Plot(){
+	 Outlier_Model("homosap",Exp(0.041667,-140,0),U(0,0),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start MNVLDV1");
+		 Phase("MNVLDV1"){
+		 	 R_Date("Ly-1735",6200,190);
+		 	 R_Date("Ly-2324",6110,140);
+		 	 R_Date("Lyon-3566",6110,30) {Outlier(1, "homosap");};
+		 	 R_Date("Lyon-3568",6090,30) {Outlier(1, "homosap");};
+		 	 R_Date("SacA-5462",6090,30);
+		 	 R_Date("Lyon-3567",6070,30) {Outlier(1, "homosap");};
+		 	 R_Date("Lyon-3570",6055,30) {Outlier(1, "homosap");};
+		 	 R_Date("Ly-2323",5860,190);
+		 	 Date("MNVLDV1");
+		 };
+		 Boundary("B_End MNVLDV1");
+	 };
+};

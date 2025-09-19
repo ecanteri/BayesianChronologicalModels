@@ -1,0 +1,17 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median	YearType
+B_Start EBD1	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+KN-3060	6287	6029	6299	6001	Unmodelled	R_Date	Date	6177	86	6200	calBP
+KN-3067	6272	6008	6288	5993	Unmodelled	R_Date	Date	6136	89	6138	calBP
+KN-3066	6272	6009	6283	5997	Unmodelled	R_Date	Date	6137	87	6139	calBP
+KN-3065	6268	6004	6284	5948	Unmodelled	R_Date	Date	6127	89	6129	calBP
+KN-3010	6174	5919	6267	5894	Unmodelled	R_Date	Date	6035	97	6026	calBP
+EBD1	NA	NA	NA	NA	Unmodelled	Calculate	Date	NA	NA	NA	calBP
+B_End EBD1	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+B_Start EBD1	6300	6098	6481	6010	Modelled	Boundary	Date	6229	129	6210	calBP
+KN-3060	6219	6054	6308	5969	Modelled	R_Date	Date	6137	83	6136	calBP
+KN-3067	6209	6048	6295	5960	Modelled	R_Date	Date	6128	82	6128	calBP
+KN-3066	6209	6049	6295	5960	Modelled	R_Date	Date	6128	82	6129	calBP
+KN-3065	6209	6046	6293	5958	Modelled	R_Date	Date	6126	82	6127	calBP
+KN-3010	6199	6034	6278	5934	Modelled	R_Date	Date	6109	85	6113	calBP
+EBD1	6221	6035	6358	5891	Modelled	Calculate	Date	6125	116	6126	calBP
+B_End EBD1	6155	5955	6238	5769	Modelled	Boundary	Date	6021	134	6043	calBP

@@ -1,0 +1,474 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start SOP2 Boundary()
+Beta-251909 R_Date(7120,50)
+  68.3% probability
+    6057BC ( 7.4%) 6044BC
+    6032BC (44.9%) 5979BC
+    5945BC (16.0%) 5922BC
+  95.4% probability
+    6071BC (95.4%) 5894BC
+Beta-251911 R_Date(7110,50)
+  68.3% probability
+    6054BC ( 2.7%) 6048BC
+    6030BC (43.6%) 5975BC
+    5948BC (22.0%) 5918BC
+  95.4% probability
+    6070BC (95.4%) 5888BC
+Beta-251910 R_Date(7100,50)
+  68.3% probability
+    6026BC (40.9%) 5970BC
+    5951BC (27.4%) 5912BC
+  95.4% probability
+    6066BC (94.6%) 5886BC
+    5856BC ( 0.9%) 5850BC
+Z-2826 R_Date(6340,100)
+  68.3% probability
+    5471BC ( 9.9%) 5434BC
+    5389BC (58.4%) 5213BC
+  95.4% probability
+    5480BC (95.4%) 5046BC
+Z-3868 R_Date(6295,135)
+  68.3% probability
+    5467BC ( 3.7%) 5446BC
+    5380BC (42.4%) 5203BC
+    5180BC (22.2%) 5062BC
+  95.4% probability
+    5524BC ( 1.1%) 5496BC
+    5484BC (93.9%) 4932BC
+    4922BC ( 0.5%) 4906BC
+Z-3139 R_Date(6020,100)
+  68.3% probability
+    5044BC (68.3%) 4790BC
+  95.4% probability
+    5211BC (95.4%) 4710BC
+Z-3140 R_Date(6010,100)
+  68.3% probability
+    5039BC (68.3%) 4786BC
+  95.4% probability
+    5210BC (95.4%) 4699BC
+Z-3141 R_Date(5960,100)
+  68.3% probability
+    4984BC ( 2.1%) 4974BC
+    4952BC (66.2%) 4720BC
+  95.4% probability
+    5206BC ( 2.1%) 5170BC
+    5114BC ( 0.4%) 5102BC
+    5074BC (92.5%) 4590BC
+    4566BC ( 0.4%) 4554BC
+Beta-251907 R_Date(5940,40)
+  68.3% probability
+    4888BC ( 8.8%) 4870BC
+    4848BC (48.9%) 4780BC
+    4750BC (10.6%) 4729BC
+  95.4% probability
+    4934BC ( 2.6%) 4918BC
+    4908BC (92.8%) 4718BC
+Z-3869 R_Date(5900,75)
+  68.3% probability
+    4892BC ( 5.4%) 4870BC
+    4848BC (62.9%) 4688BC
+  95.4% probability
+    4984BC ( 0.6%) 4974BC
+    4952BC (93.6%) 4583BC
+    4570BC ( 1.3%) 4551BC
+Beta-230029 R_Date(5880,40)
+  68.3% probability
+    4794BC (68.3%) 4710BC
+  95.4% probability
+    4846BC (93.4%) 4657BC
+    4636BC ( 2.0%) 4616BC
+Beta-251912 R_Date(5860,50)
+  68.3% probability
+    4795BC (65.8%) 4678BC
+    4630BC ( 2.5%) 4622BC
+  95.4% probability
+    4842BC (94.4%) 4590BC
+    4566BC ( 1.0%) 4554BC
+Beta-251908 R_Date(5840,50)
+  68.3% probability
+    4786BC (56.9%) 4671BC
+    4666BC ( 2.9%) 4658BC
+    4636BC ( 8.5%) 4616BC
+  95.4% probability
+    4830BC ( 1.6%) 4817BC
+    4799BC (93.8%) 4549BC
+Z-3143 R_Date(5840,100)
+  68.3% probability
+    4827BC ( 1.3%) 4821BC
+    4798BC (62.5%) 4582BC
+    4571BC ( 4.5%) 4551BC
+  95.4% probability
+    4942BC (95.4%) 4456BC
+Z-3870 R_Date(5840,80)
+  68.3% probability
+    4795BC (66.5%) 4602BC
+    4563BC ( 1.7%) 4556BC
+  95.4% probability
+    4901BC ( 3.0%) 4863BC
+    4854BC (92.5%) 4496BC
+Beta-251913 R_Date(5800,50)
+  68.3% probability
+    4716BC (64.5%) 4598BC
+    4564BC ( 3.7%) 4555BC
+  95.4% probability
+    4788BC (95.4%) 4537BC
+Z-2753 R_Date(5790,125)
+  68.3% probability
+    4786BC (68.3%) 4500BC
+  95.4% probability
+    4936BC (90.8%) 4436BC
+    4430BC ( 4.7%) 4362BC
+Beta-230031 R_Date(5780,40)
+  68.3% probability
+    4690BC (61.7%) 4588BC
+    4566BC ( 6.6%) 4554BC
+  95.4% probability
+    4723BC (94.3%) 4534BC
+    4518BC ( 1.1%) 4505BC
+Beta-230033 R_Date(5760,40)
+  68.3% probability
+    4677BC (26.2%) 4632BC
+    4620BC (42.1%) 4548BC
+  95.4% probability
+    4712BC (95.4%) 4502BC
+Z-3867 R_Date(5715,155)
+  68.3% probability
+    4718BC (59.4%) 4442BC
+    4422BC ( 8.9%) 4368BC
+  95.4% probability
+    4948BC (93.7%) 4316BC
+    4299BC ( 1.7%) 4252BC
+Beta-230032 R_Date(5680,40)
+  68.3% probability
+    4546BC (68.3%) 4454BC
+  95.4% probability
+    4656BC ( 1.7%) 4637BC
+    4615BC (89.8%) 4442BC
+    4421BC ( 2.9%) 4396BC
+    4384BC ( 1.1%) 4370BC
+Z-2752 R_Date(5675,120)
+  68.3% probability
+    4658BC ( 4.8%) 4636BC
+    4616BC (49.7%) 4440BC
+    4424BC (13.7%) 4366BC
+  95.4% probability
+    4796BC (94.6%) 4326BC
+    4286BC ( 0.8%) 4266BC
+Z-3142 R_Date(5550,130)
+  68.3% probability
+    4544BC (58.9%) 4314BC
+    4300BC ( 9.3%) 4252BC
+  95.4% probability
+    4696BC (86.8%) 4216BC
+    4206BC ( 3.6%) 4159BC
+    4136BC ( 5.0%) 4054BC
+Z-3866 R_Date(5415,195)
+  68.3% probability
+    4446BC (66.4%) 4043BC
+    4013BC ( 1.9%) 3998BC
+  95.4% probability
+    4691BC (92.2%) 3894BC
+    3881BC ( 3.2%) 3798BC
+Z-2827 R_Date(5380,100)
+  68.3% probability
+    4334BC (36.3%) 4221BC
+    4201BC (11.7%) 4163BC
+    4131BC (20.2%) 4059BC
+  95.4% probability
+    4442BC ( 1.3%) 4422BC
+    4369BC (94.1%) 3981BC
+Z-2754 R_Date(5360,130)
+  68.3% probability
+    4331BC (45.1%) 4155BC
+    4142BC (23.1%) 4051BC
+  95.4% probability
+    4487BC ( 0.3%) 4478BC
+    4457BC (95.0%) 3946BC
+    3828BC ( 0.2%) 3820BC
+Z-2911 R_Date(5330,90)
+  68.3% probability
+    4316BC ( 4.9%) 4298BC
+    4253BC (63.3%) 4050BC
+  95.4% probability
+    4338BC (95.4%) 3982BC
+Beta-230030 R_Date(5300,40)
+  68.3% probability
+    4230BC (18.1%) 4194BC
+    4168BC ( 7.1%) 4154BC
+    4144BC (27.9%) 4088BC
+    4082BC (15.1%) 4050BC
+  95.4% probability
+    4309BC ( 0.4%) 4305BC
+    4249BC (90.0%) 4039BC
+    4020BC ( 5.0%) 3992BC
+Z-2909 R_Date(5220,100)
+  68.3% probability
+    4230BC ( 9.0%) 4194BC
+    4170BC (59.3%) 3954BC
+  95.4% probability
+    4324BC ( 2.8%) 4290BC
+    4262BC (92.6%) 3796BC
+SOP2 
+ SOP2 = ( Phase SOP2
+SOP2 Phase()
+) Phase SOP2
+B_End SOP2 Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+i : Using logs - function probability low
+Posterior 
+( MCMC(30000)
+Overall agreement 102.8%
+Dynamic agreement 103.1%
+B_Start SOP2 Posterior 
+  68.3% probability
+    6114BC (68.3%) 5986BC
+  95.4% probability
+    6223BC (95.4%) 5930BC
+Beta-251909 Posterior 
+  68.3% probability
+    6026BC (40.2%) 5976BC
+    5949BC (28.0%) 5916BC
+  95.4% probability
+    6064BC (95.4%) 5890BC
+ Agreement  98.6%
+Beta-251911 Posterior 
+  68.3% probability
+    6022BC (36.9%) 5974BC
+    5950BC (31.4%) 5914BC
+  95.4% probability
+    6062BC (94.9%) 5886BC
+    5855BC ( 0.5%) 5851BC
+ Agreement  99.9%
+Beta-251910 Posterior 
+  68.3% probability
+    6018BC (33.6%) 5972BC
+    5951BC (34.6%) 5910BC
+  95.4% probability
+    6059BC (93.3%) 5882BC
+    5861BC ( 2.2%) 5847BC
+ Agreement 101.1%
+Z-2826 Posterior 
+  68.3% probability
+    5463BC (68.3%) 5160BC
+  95.4% probability
+    5591BC (95.4%) 4979BC
+ Agreement 100.1%
+Z-3868 Posterior 
+  68.3% probability
+    5428BC (68.3%) 5056BC
+  95.4% probability
+    5589BC (95.4%) 4857BC
+ Agreement 100.0%
+Z-3139 Posterior 
+  68.3% probability
+    5091BC (68.3%) 4756BC
+  95.4% probability
+    5277BC (95.4%) 4607BC
+ Agreement 100.0%
+Z-3140 Posterior 
+  68.3% probability
+    5076BC (68.3%) 4742BC
+  95.4% probability
+    5268BC (95.4%) 4597BC
+ Agreement 100.0%
+Z-3141 Posterior 
+  68.3% probability
+    5009BC (68.3%) 4683BC
+  95.4% probability
+    5201BC (95.4%) 4526BC
+ Agreement  99.9%
+Beta-251907 Posterior 
+  68.3% probability
+    4888BC ( 8.1%) 4870BC
+    4848BC (49.6%) 4780BC
+    4751BC (10.6%) 4730BC
+  95.4% probability
+    4934BC ( 2.8%) 4918BC
+    4910BC (92.7%) 4718BC
+ Agreement  99.6%
+Z-3869 Posterior 
+  68.3% probability
+    4915BC (68.3%) 4636BC
+  95.4% probability
+    5057BC (95.4%) 4496BC
+ Agreement  99.9%
+Beta-230029 Posterior 
+  68.3% probability
+    4866BC (68.3%) 4640BC
+  95.4% probability
+    4974BC (95.4%) 4527BC
+ Agreement  99.9%
+Beta-251912 Posterior 
+  68.3% probability
+    4795BC (65.8%) 4678BC
+    4630BC ( 2.4%) 4622BC
+  95.4% probability
+    4843BC (94.5%) 4590BC
+    4566BC ( 1.0%) 4554BC
+ Agreement 100.0%
+Beta-251908 Posterior 
+  68.3% probability
+    4784BC (59.5%) 4671BC
+    4636BC ( 8.8%) 4616BC
+  95.4% probability
+    4830BC ( 1.5%) 4818BC
+    4800BC (94.0%) 4549BC
+ Agreement  99.9%
+Z-3143 Posterior 
+  68.3% probability
+    4855BC (68.3%) 4536BC
+  95.4% probability
+    5017BC (95.4%) 4390BC
+ Agreement 100.0%
+Z-3870 Posterior 
+  68.3% probability
+    4837BC (68.3%) 4552BC
+  95.4% probability
+    4981BC (95.4%) 4416BC
+ Agreement 100.1%
+Beta-251913 Posterior 
+  68.3% probability
+    4716BC (65.1%) 4599BC
+    4564BC ( 3.2%) 4556BC
+  95.4% probability
+    4788BC (95.4%) 4536BC
+ Agreement 100.0%
+Z-2753 Posterior 
+  68.3% probability
+    4819BC (68.3%) 4468BC
+  95.4% probability
+    5012BC (95.4%) 4306BC
+ Agreement 100.0%
+Beta-230031 Posterior 
+  68.3% probability
+    4744BC (68.3%) 4514BC
+  95.4% probability
+    4860BC (95.4%) 4402BC
+ Agreement 100.0%
+Beta-230033 Posterior 
+  68.3% probability
+    4731BC (68.3%) 4500BC
+  95.4% probability
+    4844BC (95.4%) 4384BC
+ Agreement  99.9%
+Z-3867 Posterior 
+  68.3% probability
+    4767BC (67.7%) 4388BC
+    4380BC ( 0.6%) 4376BC
+  95.4% probability
+    4984BC (95.4%) 4208BC
+ Agreement 100.5%
+Beta-230032 Posterior 
+  68.3% probability
+    4624BC (68.3%) 4396BC
+  95.4% probability
+    4746BC (95.4%) 4286BC
+ Agreement  99.8%
+Z-2752 Posterior 
+  68.3% probability
+    4694BC (68.3%) 4369BC
+  95.4% probability
+    4860BC (95.4%) 4223BC
+ Agreement 100.3%
+Z-3142 Posterior 
+  68.3% probability
+    4576BC (68.3%) 4239BC
+  95.4% probability
+    4751BC (95.4%) 4086BC
+ Agreement 102.4%
+Z-3866 Posterior 
+  68.3% probability
+    4475BC (68.3%) 4102BC
+  95.4% probability
+    4732BC (95.4%) 3978BC
+ Agreement 105.2%
+Z-2827 Posterior 
+  68.3% probability
+    4372BC (68.3%) 4111BC
+  95.4% probability
+    4504BC (95.4%) 3999BC
+ Agreement 102.7%
+Z-2754 Posterior 
+  68.3% probability
+    4372BC (68.3%) 4098BC
+  95.4% probability
+    4532BC (95.4%) 3982BC
+ Agreement 103.4%
+Z-2911 Posterior 
+  68.3% probability
+    4332BC (68.3%) 4096BC
+  95.4% probability
+    4458BC (95.4%) 3988BC
+ Agreement 101.5%
+Beta-230030 Posterior 
+  68.3% probability
+    4287BC (68.3%) 4082BC
+  95.4% probability
+    4397BC (95.4%) 3986BC
+ Agreement 100.5%
+Z-2909 Posterior 
+  68.3% probability
+    4296BC (68.3%) 4062BC
+  95.4% probability
+    4422BC (95.4%) 3946BC
+ Agreement 100.0%
+SOP2 Posterior 
+  68.3% probability
+    5944BC ( 2.4%) 5892BC
+    5878BC ( 2.6%) 5818BC
+    5813BC ( 3.9%) 5728BC
+    5722BC ( 0.3%) 5716BC
+    5698BC ( 1.6%) 5662BC
+    5655BC ( 0.5%) 5644BC
+    5630BC ( 7.3%) 5464BC
+    5459BC ( 1.1%) 5434BC
+    5428BC ( 2.8%) 5363BC
+    5358BC ( 2.4%) 5304BC
+    5297BC ( 2.1%) 5251BC
+    5244BC ( 6.0%) 5112BC
+    5104BC ( 2.2%) 5056BC
+    5049BC ( 2.2%) 5001BC
+    4984BC ( 2.1%) 4939BC
+    4934BC ( 4.4%) 4830BC
+    4822BC (15.5%) 4472BC
+    4463BC ( 2.2%) 4415BC
+    4408BC ( 1.4%) 4378BC
+    4369BC ( 0.4%) 4361BC
+    4354BC ( 3.6%) 4267BC
+    4260BC ( 0.8%) 4242BC
+    4234BC ( 0.2%) 4230BC
+  95.4% probability
+    6043BC (95.4%) 4063BC
+B_End SOP2 Posterior 
+  68.3% probability
+    4156BC (68.3%) 3943BC
+  95.4% probability
+    4237BC (95.4%) 3810BC
+) MCMC(960000)

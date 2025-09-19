@@ -1,0 +1,17 @@
+Outlier_Model	PosteriorProb	PriorProb
+Lv-1691	1	1
+Lv-1685	1	1
+Lv-1688	1	1
+Lv-1690	1	1
+Lv-1607	1	1
+Lv-1692	1	1
+Lv-1689	1	1
+Lv-1687	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1

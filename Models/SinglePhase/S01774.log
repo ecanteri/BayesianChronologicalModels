@@ -1,0 +1,111 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start EBD1 Boundary()
+KN-3060 R_Date(5400,60)
+  68.3% probability
+    4339BC (55.3%) 4230BC
+    4194BC (10.2%) 4168BC
+    4090BC ( 2.7%) 4081BC
+  95.4% probability
+    4351BC (76.5%) 4156BC
+    4139BC (18.9%) 4052BC
+KN-3067 R_Date(5360,65)
+  68.3% probability
+    4324BC (13.0%) 4290BC
+    4262BC (15.8%) 4222BC
+    4201BC (14.9%) 4163BC
+    4131BC (24.7%) 4060BC
+  95.4% probability
+    4340BC (95.4%) 4045BC
+KN-3066 R_Date(5360,60)
+  68.3% probability
+    4324BC (13.1%) 4290BC
+    4262BC (16.1%) 4222BC
+    4200BC (15.3%) 4164BC
+    4130BC (23.8%) 4060BC
+  95.4% probability
+    4335BC (95.4%) 4048BC
+KN-3065 R_Date(5350,65)
+  68.3% probability
+    4320BC ( 9.3%) 4294BC
+    4258BC (14.7%) 4218BC
+    4204BC (16.3%) 4162BC
+    4134BC (28.0%) 4056BC
+  95.4% probability
+    4336BC (94.1%) 4044BC
+    4011BC ( 1.3%) 4000BC
+KN-3010 R_Date(5240,70)
+  68.3% probability
+    4226BC ( 9.4%) 4198BC
+    4166BC (15.0%) 4124BC
+    4114BC ( 5.2%) 4096BC
+    4068BC (38.6%) 3971BC
+  95.4% probability
+    4319BC ( 1.5%) 4296BC
+    4256BC (94.0%) 3946BC
+EBD1 
+ EBD1 = ( Phase EBD1
+EBD1 Phase()
+) Phase EBD1
+B_End EBD1 Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+i : Using logs - function probability low
+Posterior 
+( MCMC(30000)
+Overall agreement 100.4%
+Dynamic agreement 100.2%
+B_Start EBD1 Posterior 
+  68.3% probability
+    4352BC (68.3%) 4150BC
+  95.4% probability
+    4533BC (95.4%) 4062BC
+KN-3060 Posterior 
+  68.3% probability
+    4271BC (68.3%) 4106BC
+  95.4% probability
+    4360BC (95.4%) 4021BC
+ Agreement  96.7%
+KN-3067 Posterior 
+  68.3% probability
+    4261BC (68.3%) 4100BC
+  95.4% probability
+    4347BC (95.4%) 4012BC
+ Agreement 101.9%
+KN-3066 Posterior 
+  68.3% probability
+    4261BC (68.3%) 4100BC
+  95.4% probability
+    4346BC (95.4%) 4012BC
+ Agreement 101.5%
+KN-3065 Posterior 
+  68.3% probability
+    4260BC (68.3%) 4098BC
+  95.4% probability
+    4345BC (95.4%) 4010BC
+ Agreement 102.6%
+KN-3010 Posterior 
+  68.3% probability
+    4251BC (68.3%) 4086BC
+  95.4% probability
+    4330BC (95.4%) 3986BC
+ Agreement  98.3%
+EBD1 Posterior 
+  68.3% probability
+    4272BC (68.3%) 4086BC
+  95.4% probability
+    4410BC (95.4%) 3942BC
+B_End EBD1 Posterior 
+  68.3% probability
+    4206BC (68.3%) 4006BC
+  95.4% probability
+    4290BC (95.4%) 3820BC
+) MCMC(1920000)

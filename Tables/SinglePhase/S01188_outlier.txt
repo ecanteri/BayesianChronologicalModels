@@ -1,0 +1,11 @@
+Outlier_Model	PosteriorProb	PriorProb
+QUERSPE	0	0
+MALUSYL	0	0
+GU-1828	1	1
+GU-1831	1	1
+OxA-1769	1	1
+GU-1830	1	1
+GU-1832	1	1
+OxA-1768	0	0
+OxA-1767	0	0
+GU-1829	1	1

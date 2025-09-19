@@ -1,0 +1,10 @@
+Outlier_Model	PosteriorProb	PriorProb
+OxA-2590	0	0
+Hv-8450	1	1
+Hv-8453	1	1
+OxA-2587	0	0
+OxA-2591	0	0
+OxA-2589	0	0
+OxA-2588	0	0
+Warning	0	0
+Warning	1	1

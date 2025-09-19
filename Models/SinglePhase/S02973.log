@@ -1,0 +1,158 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+Exp(0.041667,-140,0)
+Warning! Not calculating range
+Warning! Not calculating range
+Warning! Not calculating range
+U(0)
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+homosap Outlier_Model()
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start MNVLDV1 Boundary()
+Ly-1735 R_Date(6200,190)
+  68.3% probability
+    5360BC (67.4%) 4934BC
+    4918BC ( 0.9%) 4910BC
+  95.4% probability
+    5530BC (95.4%) 4706BC
+Ly-2324 R_Date(6110,140)
+  68.3% probability
+    5213BC (64.5%) 4890BC
+    4870BC ( 3.8%) 4848BC
+  95.4% probability
+    5360BC (95.4%) 4716BC
+Lyon-3566 R_Date(6110,30)
+  68.3% probability
+    5203BC (13.1%) 5181BC
+    5060BC (52.7%) 4988BC
+    4965BC ( 2.5%) 4958BC
+  95.4% probability
+    5208BC (18.5%) 5156BC
+    5124BC ( 4.6%) 5091BC
+    5083BC (72.3%) 4938BC
+Lyon-3568 R_Date(6090,30)
+  68.3% probability
+    5042BC (68.3%) 4950BC
+  95.4% probability
+    5206BC ( 8.9%) 5173BC
+    5072BC (85.6%) 4901BC
+    4864BC ( 1.0%) 4853BC
+SacA-5462 R_Date(6090,30)
+  68.3% probability
+    5042BC (68.3%) 4950BC
+  95.4% probability
+    5206BC ( 8.9%) 5173BC
+    5072BC (85.6%) 4901BC
+    4864BC ( 1.0%) 4853BC
+Lyon-3567 R_Date(6070,30)
+  68.3% probability
+    5030BC (68.3%) 4936BC
+  95.4% probability
+    5201BC ( 2.6%) 5186BC
+    5053BC (88.8%) 4896BC
+    4868BC ( 4.1%) 4848BC
+Lyon-3570 R_Date(6055,30)
+  68.3% probability
+    5000BC (68.3%) 4904BC
+  95.4% probability
+    5041BC (87.2%) 4881BC
+    4872BC ( 8.2%) 4846BC
+Ly-2323 R_Date(5860,190)
+  68.3% probability
+    4946BC (68.3%) 4496BC
+  95.4% probability
+    5208BC (95.4%) 4356BC
+MNVLDV1 
+ MNVLDV1 = ( Phase MNVLDV1
+MNVLDV1 Phase()
+) Phase MNVLDV1
+B_End MNVLDV1 Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+i : Using logs - function probability low
+Posterior 
+( MCMC(30000)
+Overall agreement 129.1%
+Dynamic agreement 127.6%
+homosap Posterior 
+  68.3% probability
+    -4 (68.3%) 1
+  95.4% probability
+    -8 (95.4%) 1
+Posterior 
+Posterior 
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+ Agreement 100.0%
+B_Start MNVLDV1 Posterior 
+  68.3% probability
+    5052BC (68.3%) 4986BC
+  95.4% probability
+    5100BC (95.4%) 4950BC
+Ly-1735 Posterior 
+  68.3% probability
+    5019BC (68.3%) 4956BC
+  95.4% probability
+    5065BC (95.4%) 4916BC
+ Agreement 109.7%
+Ly-2324 Posterior 
+  68.3% probability
+    5017BC (68.3%) 4956BC
+  95.4% probability
+    5061BC (95.4%) 4916BC
+ Agreement 127.7%
+Lyon-3566 Posterior 
+  68.3% probability
+    5024BC (54.6%) 4980BC
+    4972BC (13.7%) 4956BC
+  95.4% probability
+    5046BC (95.4%) 4943BC
+ Agreement 105.0%
+Lyon-3568 Posterior 
+  68.3% probability
+    5016BC (68.3%) 4956BC
+  95.4% probability
+    5041BC (95.4%) 4941BC
+ Agreement 121.0%
+SacA-5462 Posterior 
+  68.3% probability
+    5016BC (68.3%) 4956BC
+  95.4% probability
+    5042BC (95.4%) 4942BC
+ Agreement 120.5%
+Lyon-3567 Posterior 
+  68.3% probability
+    5008BC (68.3%) 4954BC
+  95.4% probability
+    5039BC (95.4%) 4936BC
+ Agreement 119.9%
+Lyon-3570 Posterior 
+  68.3% probability
+    5006BC (68.3%) 4951BC
+  95.4% probability
+    5038BC (95.4%) 4931BC
+ Agreement 109.7%
+Ly-2323 Posterior 
+  68.3% probability
+    5016BC (68.3%) 4954BC
+  95.4% probability
+    5056BC (95.4%) 4908BC
+ Agreement  76.2%
+MNVLDV1 Posterior 
+  68.3% probability
+    5018BC (68.3%) 4955BC
+  95.4% probability
+    5062BC (95.4%) 4912BC
+B_End MNVLDV1 Posterior 
+  68.3% probability
+    4996BC (68.3%) 4932BC
+  95.4% probability
+    5029BC (95.4%) 4870BC
+) MCMC(960000)

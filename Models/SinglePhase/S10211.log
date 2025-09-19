@@ -1,0 +1,530 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+Exp(0.041667,-140,0)
+Warning! Not calculating range
+Warning! Not calculating range
+Warning! Not calculating range
+U(0)
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+homosap Outlier_Model()
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start STARC1 Boundary()
+OxA-8561 R_Date(6975,60)
+  68.3% probability
+    5971BC ( 8.5%) 5951BC
+    5912BC (59.8%) 5788BC
+  95.4% probability
+    5984BC (15.1%) 5937BC
+    5930BC (80.3%) 5733BC
+GrN-9036 R_Date(6920,45)
+  68.3% probability
+    5839BC (68.3%) 5738BC
+  95.4% probability
+    5967BC ( 1.5%) 5954BC
+    5900BC (93.9%) 5718BC
+BRAMS-2456 R_Date(6866,28)
+  68.3% probability
+    5781BC (68.3%) 5718BC
+  95.4% probability
+    5831BC (88.7%) 5706BC
+    5696BC ( 6.8%) 5670BC
+BRAMS-2458 R_Date(6851,27)
+  68.3% probability
+    5757BC (56.4%) 5709BC
+    5690BC (11.9%) 5672BC
+  95.4% probability
+    5798BC (95.4%) 5663BC
+GrN-7155 R_Date(6835,70)
+  68.3% probability
+    5782BC (68.3%) 5655BC
+  95.4% probability
+    5886BC ( 3.1%) 5857BC
+    5850BC (92.3%) 5622BC
+GrN-9035 R_Date(6835,45)
+  68.3% probability
+    5750BC (68.3%) 5662BC
+  95.4% probability
+    5830BC ( 1.7%) 5816BC
+    5806BC (93.8%) 5632BC
+BRAMS-2189 R_Date(6835,29)
+  68.3% probability
+    5738BC (41.4%) 5706BC
+    5696BC (26.9%) 5669BC
+  95.4% probability
+    5782BC (95.4%) 5654BC
+BRAMS-2190 R_Date(6797,29)
+  68.3% probability
+    5718BC (68.3%) 5664BC
+  95.4% probability
+    5730BC (95.4%) 5634BC
+OxA-8617 R_Date(6785,55)
+  68.3% probability
+    5719BC (68.3%) 5640BC
+  95.4% probability
+    5779BC (92.9%) 5617BC
+    5585BC ( 2.6%) 5567BC
+BRAMS-2457 R_Date(6783,27)
+  68.3% probability
+    5716BC (68.3%) 5658BC
+  95.4% probability
+    5724BC (95.4%) 5632BC
+OxA-8563 R_Date(6765,55)
+  68.3% probability
+    5712BC (68.3%) 5631BC
+  95.4% probability
+    5748BC (89.3%) 5612BC
+    5592BC ( 6.1%) 5562BC
+BRAMS-2191 R_Date(6760,28)
+  68.3% probability
+    5708BC (17.4%) 5691BC
+    5670BC (50.9%) 5631BC
+  95.4% probability
+    5718BC (95.4%) 5626BC
+OxA-8562 R_Date(6730,60)
+  68.3% probability
+    5712BC (15.2%) 5686BC
+    5674BC (44.0%) 5618BC
+    5583BC ( 9.1%) 5568BC
+  95.4% probability
+    5732BC (95.4%) 5534BC
+BRAMS-2194 R_Date(6701,28)
+  68.3% probability
+    5641BC (37.4%) 5616BC
+    5586BC (30.9%) 5566BC
+  95.4% probability
+    5706BC ( 1.8%) 5692BC
+    5670BC (56.4%) 5607BC
+    5597BC (37.3%) 5557BC
+GrN-8231 R_Date(6700,70)
+  68.3% probability
+    5708BC ( 6.6%) 5690BC
+    5670BC (61.7%) 5556BC
+  95.4% probability
+    5723BC (91.7%) 5516BC
+    5501BC ( 3.8%) 5482BC
+GrN-9037 R_Date(6700,55)
+  68.3% probability
+    5668BC (41.7%) 5608BC
+    5596BC (26.6%) 5558BC
+  95.4% probability
+    5718BC (94.5%) 5526BC
+    5492BC ( 1.0%) 5486BC
+BRAMS-2398 R_Date(6695,27)
+  68.3% probability
+    5636BC (31.8%) 5616BC
+    5587BC (36.4%) 5565BC
+  95.4% probability
+    5667BC (95.4%) 5556BC
+BRAMS-2408 R_Date(6693,27)
+  68.3% probability
+    5634BC (30.5%) 5616BC
+    5587BC (37.8%) 5566BC
+  95.4% probability
+    5666BC (95.4%) 5554BC
+BRAMS-2407 R_Date(6671,27)
+  68.3% probability
+    5628BC (21.6%) 5612BC
+    5592BC (46.7%) 5562BC
+  95.4% probability
+    5640BC (95.4%) 5528BC
+BRAMS-2198 R_Date(6667,28)
+  68.3% probability
+    5627BC (21.1%) 5611BC
+    5593BC (47.2%) 5561BC
+  95.4% probability
+    5638BC (95.4%) 5525BC
+BRAMS-2197 R_Date(6665,28)
+  68.3% probability
+    5626BC (20.4%) 5611BC
+    5593BC (47.8%) 5561BC
+  95.4% probability
+    5636BC (95.4%) 5524BC
+BRAMS-2459 R_Date(6664,27)
+  68.3% probability
+    5626BC (19.9%) 5611BC
+    5594BC (48.4%) 5561BC
+  95.4% probability
+    5635BC (95.4%) 5525BC
+GrN-9034 R_Date(6640,45)
+  68.3% probability
+    5622BC (68.3%) 5534BC
+  95.4% probability
+    5630BC (95.4%) 5481BC
+BRAMS-2195 R_Date(6635,28)
+  68.3% probability
+    5620BC (37.8%) 5582BC
+    5570BC (30.5%) 5534BC
+  95.4% probability
+    5626BC (88.5%) 5516BC
+    5500BC ( 6.9%) 5482BC
+BRAMS-2192 R_Date(6633,28)
+  68.3% probability
+    5620BC (37.1%) 5582BC
+    5570BC (31.1%) 5534BC
+  95.4% probability
+    5625BC (87.9%) 5516BC
+    5501BC ( 7.6%) 5482BC
+BRAMS-2196 R_Date(6631,28)
+  68.3% probability
+    5618BC (36.5%) 5583BC
+    5568BC (31.8%) 5534BC
+  95.4% probability
+    5624BC (87.3%) 5516BC
+    5501BC ( 8.1%) 5482BC
+BRAMS-2187 R_Date(6620,28)
+  68.3% probability
+    5616BC (29.7%) 5586BC
+    5566BC (34.4%) 5528BC
+    5491BC ( 4.2%) 5486BC
+  95.4% probability
+    5621BC (95.4%) 5482BC
+GrN-6629 R_Date(6615,65)
+  68.3% probability
+    5618BC (22.7%) 5584BC
+    5568BC (34.1%) 5516BC
+    5501BC (11.6%) 5482BC
+  95.4% probability
+    5661BC (95.4%) 5472BC
+BRAMS-2188 R_Date(6611,28)
+  68.3% probability
+    5613BC (23.5%) 5590BC
+    5563BC (36.5%) 5526BC
+    5494BC ( 8.3%) 5484BC
+  95.4% probability
+    5620BC (30.0%) 5582BC
+    5570BC (65.5%) 5481BC
+GrN-6626 R_Date(6610,65)
+  68.3% probability
+    5616BC (21.2%) 5586BC
+    5566BC (34.6%) 5516BC
+    5501BC (12.4%) 5482BC
+  95.4% probability
+    5659BC (94.7%) 5472BC
+    5426BC ( 0.7%) 5417BC
+GrN-7154 R_Date(6610,100)
+  68.3% probability
+    5626BC (68.3%) 5478BC
+  95.4% probability
+    5716BC (84.5%) 5461BC
+    5454BC (10.9%) 5374BC
+OxA-8559 R_Date(6565,55)
+  68.3% probability
+    5607BC ( 6.0%) 5598BC
+    5558BC (62.3%) 5478BC
+  95.4% probability
+    5622BC (88.8%) 5471BC
+    5432BC ( 6.7%) 5389BC
+GrN-6627 R_Date(6545,105)
+  68.3% probability
+    5616BC (10.5%) 5586BC
+    5566BC (39.5%) 5469BC
+    5440BC (18.2%) 5383BC
+  95.4% probability
+    5666BC (95.4%) 5308BC
+OxA-8560 R_Date(6480,55)
+  68.3% probability
+    5480BC (12.1%) 5460BC
+    5454BC (56.2%) 5375BC
+  95.4% probability
+    5538BC (95.4%) 5320BC
+GrN-9033 R_Date(6475,60)
+  68.3% probability
+    5480BC (68.3%) 5372BC
+  95.4% probability
+    5552BC (95.4%) 5316BC
+STARC1 
+ STARC1 = ( Phase STARC1
+STARC1 Phase()
+) Phase STARC1
+B_End STARC1 Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+i : Using logs - function probability low
+Posterior 
+( MCMC(30000)
+Overall agreement  64.5%
+Dynamic agreement  69.5%
+homosap Posterior 
+  68.3% probability
+    -4 (68.3%) 1
+  95.4% probability
+    -8 (95.4%) 1
+Posterior 
+Posterior 
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+ Agreement 100.0%
+B_Start STARC1 Posterior 
+  68.3% probability
+    5768BC (68.3%) 5732BC
+  95.4% probability
+    5804BC (94.7%) 5716BC
+    5696BC ( 0.7%) 5690BC
+OxA-8561 Posterior 
+  68.3% probability
+    5759BC (68.3%) 5721BC
+  95.4% probability
+    5780BC (95.4%) 5666BC
+Warning! Poor agreement - A= 43.1%(A'c= 60.0%)
+ Poor agreement  43.1%
+GrN-9036 Posterior 
+  68.3% probability
+    5756BC (68.3%) 5720BC
+  95.4% probability
+    5777BC (95.4%) 5668BC
+ Agreement  76.9%
+BRAMS-2456 Posterior 
+  68.3% probability
+    5751BC (66.2%) 5713BC
+    5679BC ( 2.1%) 5676BC
+  95.4% probability
+    5766BC (95.4%) 5666BC
+ Agreement 113.0%
+BRAMS-2458 Posterior 
+  68.3% probability
+    5743BC (54.3%) 5711BC
+    5688BC (14.0%) 5673BC
+  95.4% probability
+    5758BC (95.4%) 5663BC
+ Agreement 111.0%
+GrN-7155 Posterior 
+  68.3% probability
+    5738BC (68.3%) 5660BC
+  95.4% probability
+    5766BC (95.4%) 5621BC
+ Agreement 117.4%
+GrN-9035 Posterior 
+  68.3% probability
+    5736BC (68.3%) 5668BC
+  95.4% probability
+    5752BC (95.4%) 5634BC
+ Agreement 113.7%
+BRAMS-2189 Posterior 
+  68.3% probability
+    5735BC (39.5%) 5707BC
+    5694BC (28.8%) 5670BC
+  95.4% probability
+    5750BC (95.4%) 5652BC
+ Agreement 106.4%
+BRAMS-2190 Posterior 
+  68.3% probability
+    5718BC (68.3%) 5664BC
+  95.4% probability
+    5728BC (95.4%) 5636BC
+ Agreement 100.3%
+OxA-8617 Posterior 
+  68.3% probability
+    5715BC (68.3%) 5640BC
+  95.4% probability
+    5741BC (93.7%) 5618BC
+    5580BC ( 1.8%) 5569BC
+ Agreement 105.1%
+BRAMS-2457 Posterior 
+  68.3% probability
+    5716BC (68.3%) 5656BC
+  95.4% probability
+    5724BC (95.4%) 5632BC
+ Agreement 100.0%
+OxA-8563 Posterior 
+  68.3% probability
+    5711BC (68.3%) 5632BC
+  95.4% probability
+    5736BC (90.2%) 5616BC
+    5586BC ( 5.3%) 5566BC
+ Agreement 102.6%
+BRAMS-2191 Posterior 
+  68.3% probability
+    5708BC (16.5%) 5691BC
+    5671BC (51.7%) 5631BC
+  95.4% probability
+    5718BC (95.4%) 5626BC
+ Agreement  99.9%
+OxA-8562 Posterior 
+  68.3% probability
+    5710BC (14.5%) 5686BC
+    5674BC (45.0%) 5618BC
+    5583BC ( 8.7%) 5569BC
+  95.4% probability
+    5730BC (95.4%) 5554BC
+ Agreement 102.7%
+BRAMS-2194 Posterior 
+  68.3% probability
+    5642BC (38.3%) 5616BC
+    5586BC (29.9%) 5566BC
+  95.4% probability
+    5706BC ( 1.7%) 5692BC
+    5670BC (56.9%) 5606BC
+    5598BC (36.9%) 5556BC
+ Agreement  98.4%
+GrN-8231 Posterior 
+  68.3% probability
+    5700BC ( 2.0%) 5694BC
+    5668BC (40.6%) 5603BC
+    5598BC (25.6%) 5556BC
+  95.4% probability
+    5722BC (95.4%) 5526BC
+ Agreement 105.6%
+GrN-9037 Posterior 
+  68.3% probability
+    5666BC (42.0%) 5610BC
+    5594BC (26.3%) 5560BC
+  95.4% probability
+    5716BC (95.4%) 5536BC
+ Agreement 103.5%
+BRAMS-2398 Posterior 
+  68.3% probability
+    5636BC (32.5%) 5616BC
+    5587BC (35.8%) 5566BC
+  95.4% probability
+    5666BC (95.4%) 5556BC
+ Agreement  98.4%
+BRAMS-2408 Posterior 
+  68.3% probability
+    5634BC (31.5%) 5614BC
+    5586BC (36.8%) 5564BC
+  95.4% probability
+    5664BC (49.8%) 5603BC
+    5598BC (45.6%) 5554BC
+ Agreement  98.5%
+BRAMS-2407 Posterior 
+  68.3% probability
+    5626BC (21.6%) 5611BC
+    5590BC (46.7%) 5561BC
+  95.4% probability
+    5636BC (95.4%) 5534BC
+ Agreement 100.5%
+BRAMS-2198 Posterior 
+  68.3% probability
+    5626BC (21.2%) 5611BC
+    5592BC (47.1%) 5562BC
+  95.4% probability
+    5636BC (95.4%) 5532BC
+ Agreement 101.5%
+BRAMS-2197 Posterior 
+  68.3% probability
+    5626BC (20.4%) 5611BC
+    5593BC (47.9%) 5561BC
+  95.4% probability
+    5635BC (95.4%) 5532BC
+ Agreement 101.8%
+BRAMS-2459 Posterior 
+  68.3% probability
+    5626BC (20.0%) 5611BC
+    5593BC (48.2%) 5561BC
+  95.4% probability
+    5634BC (95.4%) 5535BC
+ Agreement 101.6%
+GrN-9034 Posterior 
+  68.3% probability
+    5622BC (68.3%) 5552BC
+  95.4% probability
+    5640BC (94.9%) 5506BC
+    5496BC ( 0.5%) 5490BC
+ Agreement 106.1%
+BRAMS-2195 Posterior 
+  68.3% probability
+    5620BC (45.3%) 5580BC
+    5571BC (22.9%) 5548BC
+  95.4% probability
+    5626BC (95.4%) 5522BC
+ Agreement 106.1%
+BRAMS-2192 Posterior 
+  68.3% probability
+    5620BC (43.1%) 5582BC
+    5570BC (25.1%) 5544BC
+  95.4% probability
+    5626BC (95.4%) 5521BC
+ Agreement 106.2%
+BRAMS-2196 Posterior 
+  68.3% probability
+    5619BC (43.0%) 5582BC
+    5570BC (25.3%) 5544BC
+  95.4% probability
+    5626BC (95.4%) 5520BC
+ Agreement 106.1%
+BRAMS-2187 Posterior 
+  68.3% probability
+    5616BC (39.1%) 5586BC
+    5566BC (29.2%) 5540BC
+  95.4% probability
+    5624BC (95.4%) 5516BC
+ Agreement 105.0%
+GrN-6629 Posterior 
+  68.3% probability
+    5620BC (37.7%) 5579BC
+    5572BC (30.6%) 5536BC
+  95.4% probability
+    5656BC (95.4%) 5491BC
+ Agreement 102.4%
+BRAMS-2188 Posterior 
+  68.3% probability
+    5616BC (34.4%) 5587BC
+    5565BC (33.8%) 5532BC
+  95.4% probability
+    5623BC (95.4%) 5510BC
+ Agreement 102.8%
+GrN-6626 Posterior 
+  68.3% probability
+    5620BC (37.2%) 5580BC
+    5572BC (31.1%) 5534BC
+  95.4% probability
+    5652BC (95.4%) 5488BC
+ Agreement 102.0%
+GrN-7154 Posterior 
+  68.3% probability
+    5630BC (68.3%) 5528BC
+  95.4% probability
+    5712BC (95.4%) 5499BC
+ Agreement 108.6%
+OxA-8559 Posterior 
+  68.3% probability
+    5614BC (29.7%) 5586BC
+    5564BC (38.5%) 5523BC
+  95.4% probability
+    5621BC (95.4%) 5496BC
+ Agreement  94.1%
+GrN-6627 Posterior 
+  68.3% probability
+    5620BC (68.3%) 5526BC
+  95.4% probability
+    5706BC ( 1.4%) 5691BC
+    5670BC (94.1%) 5482BC
+ Agreement 100.8%
+OxA-8560 Posterior 
+  68.3% probability
+    5609BC (16.6%) 5594BC
+    5559BC (51.7%) 5512BC
+  95.4% probability
+    5618BC (26.5%) 5584BC
+    5568BC (66.7%) 5492BC
+    5481BC ( 2.3%) 5470BC
+Warning! Poor agreement - A= 25.7%(A'c= 60.0%)
+ Poor agreement  25.7%
+GrN-9033 Posterior 
+  68.3% probability
+    5610BC (18.5%) 5593BC
+    5560BC (49.8%) 5511BC
+  95.4% probability
+    5620BC (28.0%) 5582BC
+    5570BC (64.9%) 5491BC
+    5483BC ( 2.5%) 5470BC
+Warning! Poor agreement - A= 26.5%(A'c= 60.0%)
+ Poor agreement  26.5%
+STARC1 Posterior 
+  68.3% probability
+    5718BC (68.3%) 5558BC
+  95.4% probability
+    5758BC (95.4%) 5508BC
+B_End STARC1 Posterior 
+  68.3% probability
+    5548BC (68.3%) 5495BC
+  95.4% probability
+    5565BC (95.4%) 5460BC
+) MCMC(2016000)

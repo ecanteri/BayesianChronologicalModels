@@ -1,0 +1,149 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start OZ Boundary()
+Lv-1691 R_Date(6510,80)
+  68.3% probability
+    5538BC (33.0%) 5462BC
+    5454BC (35.3%) 5376BC
+  95.4% probability
+    5620BC ( 8.0%) 5582BC
+    5570BC (87.4%) 5318BC
+Lv-1685 R_Date(6370,95)
+  68.3% probability
+    5472BC (14.2%) 5431BC
+    5411BC (42.3%) 5299BC
+    5256BC (11.8%) 5222BC
+  95.4% probability
+    5522BC ( 1.4%) 5497BC
+    5484BC (87.0%) 5204BC
+    5176BC ( 7.1%) 5066BC
+Lv-1688 R_Date(6360,360)
+  68.3% probability
+    5630BC (67.6%) 4902BC
+    4863BC ( 0.6%) 4854BC
+  95.4% probability
+    5986BC (95.2%) 4534BC
+    4520BC ( 0.3%) 4504BC
+Lv-1690 R_Date(6330,100)
+  68.3% probability
+    5471BC ( 9.1%) 5433BC
+    5390BC (59.2%) 5210BC
+  95.4% probability
+    5479BC (95.4%) 5045BC
+Lv-1607 R_Date(6300,100)
+  68.3% probability
+    5462BC ( 1.7%) 5453BC
+    5376BC (53.3%) 5206BC
+    5166BC ( 9.4%) 5119BC
+    5097BC ( 3.8%) 5077BC
+  95.4% probability
+    5476BC (95.4%) 5028BC
+Lv-1692 R_Date(6250,60)
+  68.3% probability
+    5308BC (46.3%) 5207BC
+    5165BC (16.0%) 5120BC
+    5096BC ( 6.0%) 5078BC
+  95.4% probability
+    5356BC ( 0.7%) 5346BC
+    5333BC (94.7%) 5041BC
+Lv-1689 R_Date(6200,170)
+  68.3% probability
+    5331BC (68.3%) 4936BC
+  95.4% probability
+    5478BC (94.2%) 4774BC
+    4760BC ( 1.2%) 4726BC
+Lv-1687 R_Date(6200,100)
+  68.3% probability
+    5300BC (11.3%) 5254BC
+    5223BC (55.0%) 5026BC
+    5020BC ( 1.9%) 5011BC
+  95.4% probability
+    5370BC (94.7%) 4898BC
+    4866BC ( 0.8%) 4851BC
+OZ 
+ OZ = ( Phase OZ
+OZ Phase()
+) Phase OZ
+B_End OZ Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+i : Using logs - function probability low
+Posterior 
+( MCMC(30000)
+Overall agreement 127.8%
+Dynamic agreement 127.9%
+B_Start OZ Posterior 
+  68.3% probability
+    5456BC (68.3%) 5270BC
+  95.4% probability
+    5616BC (95.4%) 5198BC
+Lv-1691 Posterior 
+  68.3% probability
+    5391BC (68.3%) 5232BC
+  95.4% probability
+    5500BC (95.4%) 5161BC
+ Agreement  95.9%
+Lv-1685 Posterior 
+  68.3% probability
+    5372BC (68.3%) 5216BC
+  95.4% probability
+    5467BC (95.4%) 5127BC
+ Agreement 105.5%
+Lv-1688 Posterior 
+  68.3% probability
+    5376BC (68.3%) 5200BC
+  95.4% probability
+    5492BC (95.4%) 5066BC
+ Agreement 131.6%
+Lv-1690 Posterior 
+  68.3% probability
+    5366BC (68.3%) 5211BC
+  95.4% probability
+    5459BC (95.4%) 5111BC
+ Agreement 110.9%
+Lv-1607 Posterior 
+  68.3% probability
+    5364BC (68.3%) 5206BC
+  95.4% probability
+    5450BC (95.4%) 5100BC
+ Agreement 112.3%
+Lv-1692 Posterior 
+  68.3% probability
+    5354BC (68.3%) 5198BC
+  95.4% probability
+    5426BC (95.4%) 5092BC
+ Agreement 107.8%
+Lv-1689 Posterior 
+  68.3% probability
+    5362BC (68.3%) 5194BC
+  95.4% probability
+    5452BC (95.4%) 5064BC
+ Agreement 109.5%
+Lv-1687 Posterior 
+  68.3% probability
+    5354BC (68.3%) 5190BC
+  95.4% probability
+    5429BC (95.4%) 5068BC
+ Agreement 102.3%
+OZ Posterior 
+  68.3% probability
+    5376BC (68.3%) 5196BC
+  95.4% probability
+    5501BC (95.4%) 5056BC
+B_End OZ Posterior 
+  68.3% probability
+    5312BC (68.3%) 5110BC
+  95.4% probability
+    5374BC (95.4%) 4920BC
+) MCMC(3840000)

@@ -1,0 +1,2 @@
+PhaseID	From_68.3	To_68.3	From_95.4	To_95.4	mean	sigma	median	YearType
+FE	5095	4843	5325	4676	4985	154	4975	calBP

@@ -1,0 +1,40 @@
+Plot(){
+	 Outlier_Model("charcoal",Exp(0.029412,-20,0),U(0,2),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start SOP2");
+		 Phase("SOP2"){
+		 	 R_Date("Beta-251909",7120,50);
+		 	 R_Date("Beta-251911",7110,50);
+		 	 R_Date("Beta-251910",7100,50);
+		 	 R_Date("Z-2826",6340,100) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3868",6295,135) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3139",6020,100) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3140",6010,100) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3141",5960,100) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-251907",5940,40);
+		 	 R_Date("Z-3869",5900,75) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-230029",5880,40) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-251912",5860,50);
+		 	 R_Date("Beta-251908",5840,50);
+		 	 R_Date("Z-3143",5840,100) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3870",5840,80) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-251913",5800,50);
+		 	 R_Date("Z-2753",5790,125) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-230031",5780,40) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-230033",5760,40) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3867",5715,155) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-230032",5680,40) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-2752",5675,120) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3142",5550,130) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-3866",5415,195) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-2827",5380,100) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-2754",5360,130) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-2911",5330,90) {Outlier(1, "charcoal");};
+		 	 R_Date("Beta-230030",5300,40) {Outlier(1, "charcoal");};
+		 	 R_Date("Z-2909",5220,100) {Outlier(1, "charcoal");};
+		 	 Date("SOP2");
+		 };
+		 Boundary("B_End SOP2");
+	 };
+};

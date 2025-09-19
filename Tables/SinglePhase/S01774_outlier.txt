@@ -1,0 +1,11 @@
+Outlier_Model	PosteriorProb	PriorProb
+KN-3060	1	1
+KN-3067	1	1
+KN-3066	1	1
+KN-3065	1	1
+KN-3010	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1
+Warning	1	1

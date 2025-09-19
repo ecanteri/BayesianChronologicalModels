@@ -1,0 +1,2 @@
+PhaseID	From_68.3	To_68.3	From_95.4	To_95.4	mean	sigma	median	YearType
+MNVLDV1	6966	6903	7011	6860	6936	37	6938	calBP

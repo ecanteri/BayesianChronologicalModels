@@ -1,0 +1,147 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start FE Boundary()
+OxA-2590 R_Date(4580,80)
+  68.3% probability
+    3500BC (15.9%) 3433BC
+    3380BC (18.7%) 3314BC
+    3296BC ( 1.8%) 3286BC
+    3240BC (31.9%) 3104BC
+  95.4% probability
+    3600BC ( 0.5%) 3590BC
+    3528BC (92.2%) 3073BC
+    3066BC ( 2.8%) 3025BC
+Hv-8450 R_Date(4500,65)
+  68.3% probability
+    3341BC (23.4%) 3264BC
+    3246BC (44.9%) 3101BC
+  95.4% probability
+    3370BC (92.8%) 3010BC
+    2982BC ( 1.5%) 2959BC
+    2953BC ( 1.2%) 2934BC
+Hv-8453 R_Date(4400,65)
+  68.3% probability
+    3282BC ( 0.9%) 3278BC
+    3266BC ( 5.0%) 3244BC
+    3102BC (62.4%) 2912BC
+  95.4% probability
+    3334BC (20.8%) 3213BC
+    3191BC ( 6.1%) 3146BC
+    3140BC (68.5%) 2900BC
+OxA-2587 R_Date(4400,80)
+  68.3% probability
+    3314BC ( 3.5%) 3296BC
+    3286BC ( 9.7%) 3240BC
+    3104BC (55.1%) 2910BC
+  95.4% probability
+    3339BC (23.9%) 3206BC
+    3198BC (71.5%) 2896BC
+OxA-2591 R_Date(4350,80)
+  68.3% probability
+    3094BC (68.3%) 2890BC
+  95.4% probability
+    3340BC (94.1%) 2868BC
+    2801BC ( 1.4%) 2776BC
+OxA-2589 R_Date(4320,130)
+  68.3% probability
+    3321BC (10.0%) 3236BC
+    3176BC ( 1.7%) 3160BC
+    3106BC (47.2%) 2858BC
+    2806BC ( 7.0%) 2752BC
+    2722BC ( 2.4%) 2702BC
+  95.4% probability
+    3357BC (94.6%) 2621BC
+    2601BC ( 0.8%) 2584BC
+OxA-2588 R_Date(4230,70)
+  68.3% probability
+    2912BC (26.2%) 2846BC
+    2812BC (26.5%) 2742BC
+    2730BC (15.5%) 2676BC
+  95.4% probability
+    3011BC ( 2.7%) 2976BC
+    2970BC ( 1.5%) 2946BC
+    2940BC (89.3%) 2618BC
+    2609BC ( 1.9%) 2581BC
+FE 
+ FE = ( Phase FE
+FE Phase()
+) Phase FE
+B_End FE Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+Warning! No outlier model specified - use Outlier_Model()
+Warning! No outlier model specified - use Outlier_Model()
+i : Using logs - function probability low
+Posterior 
+( MCMC(30000)
+Overall agreement  91.7%
+Dynamic agreement  91.2%
+B_Start FE Posterior 
+  68.3% probability
+    3332BC (68.3%) 3024BC
+  95.4% probability
+    3546BC (95.4%) 2948BC
+OxA-2590 Posterior 
+  68.3% probability
+    3218BC (68.3%) 3012BC
+  95.4% probability
+    3371BC ( 3.9%) 3321BC
+    3306BC (91.5%) 2922BC
+ Agreement  72.1%
+Hv-8450 Posterior 
+  68.3% probability
+    3174BC (68.3%) 2956BC
+  95.4% probability
+    3328BC (95.4%) 2890BC
+ Agreement  93.4%
+Hv-8453 Posterior 
+  68.3% probability
+    3120BC (68.3%) 2926BC
+  95.4% probability
+    3282BC (95.4%) 2842BC
+ Agreement 108.3%
+OxA-2587 Posterior 
+  68.3% probability
+    3094BC (68.3%) 2930BC
+  95.4% probability
+    3289BC ( 6.2%) 3211BC
+    3196BC (89.3%) 2892BC
+ Agreement 111.3%
+OxA-2591 Posterior 
+  68.3% probability
+    3086BC (12.5%) 3056BC
+    3035BC (55.7%) 2915BC
+  95.4% probability
+    3284BC ( 3.1%) 3228BC
+    3188BC (92.4%) 2876BC
+ Agreement 113.4%
+OxA-2589 Posterior 
+  68.3% probability
+    3096BC (68.3%) 2901BC
+  95.4% probability
+    3316BC (94.1%) 2838BC
+    2808BC ( 1.4%) 2776BC
+ Agreement 122.3%
+OxA-2588 Posterior 
+  68.3% probability
+    3077BC ( 3.7%) 3064BC
+    3023BC (29.6%) 2951BC
+    2926BC (35.0%) 2856BC
+  95.4% probability
+    3096BC (95.2%) 2747BC
+    2718BC ( 0.2%) 2714BC
+ Agreement  70.7%
+FE Posterior 
+  68.3% probability
+    3146BC (68.3%) 2894BC
+  95.4% probability
+    3377BC (95.4%) 2728BC
+B_End FE Posterior 
+  68.3% probability
+    3006BC (68.3%) 2780BC
+  95.4% probability
+    3080BC (95.4%) 2576BC
+) MCMC(1920000)

@@ -1,0 +1,13 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median
+QUERSPE	NA	NA	NA	NA	Unmodelled	Outlier_Model	Model	NA	NA	NA
+Exp(0.002994,-200,0)	NA	NA	NA	NA	Unmodelled	Exp	Model	-2	2	-2
+U(0,1)	9.97466e-18	1	9.97466e-18	1	Unmodelled	U	Model	0.5	0.285774	0.5
+MALUSYL	NA	NA	NA	NA	Unmodelled	Outlier_Model	Model	NA	NA	NA
+Exp(0.029412,-200,0)	NA	NA	NA	NA	Unmodelled	Exp	Model	-2	0	-2
+U(0)	-0.5	0.5	-0.5	0.5	Unmodelled	U	Model	0	0	2.63678e-16
+QUERSPE	NA	NA	NA	NA	Modelled	Outlier_Model	Model	0	0	0
+Exp(0.002994,-200,0)	NA	NA	NA	NA	Modelled	Exp	Model	0	0	0
+U(0,1)	0.038	0.992	1.34441e-17	1	Modelled	U	Model	0.500185	0.28841	0.5
+MALUSYL	-5	2.5	-8.5	2.5	Modelled	Outlier_Model	Model	-2.16627	2.7625	-1.5
+Exp(0.029412,-200,0)	NA	NA	NA	NA	Modelled	Exp	Model	-2.24875	0.660019	-2.2
+U(0)	-0.5	0.5	-0.5	0.5	Modelled	U	Model	0	0	1.3739e-15

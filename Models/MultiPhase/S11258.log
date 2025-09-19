@@ -1,0 +1,176 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start HESTE1 Boundary()
+AAR-18536 R_Date(3634,26)
+  68.3% probability
+    2031BC (68.3%) 1952BC
+  95.4% probability
+    2130BC (11.5%) 2088BC
+    2046BC (82.3%) 1921BC
+    1914BC ( 1.7%) 1900BC
+AAR-18535 R_Date(3567,25)
+  68.3% probability
+    1948BC (68.3%) 1884BC
+  95.4% probability
+    2019BC ( 5.2%) 1996BC
+    1980BC (81.0%) 1876BC
+    1844BC ( 6.3%) 1821BC
+    1796BC ( 3.0%) 1778BC
+HESTE1 
+ HESTE1 = ( Phase HESTE1
+HESTE1 Phase()
+) Phase HESTE1
+B_Transition HESTE1/HESTE2 Boundary()
+AAR-18539 R_Date(3401,25)
+  68.3% probability
+    1739BC (23.2%) 1712BC
+    1697BC (24.9%) 1667BC
+    1658BC (20.1%) 1633BC
+  95.4% probability
+    1862BC ( 0.5%) 1858BC
+    1764BC ( 0.5%) 1760BC
+    1751BC (94.5%) 1618BC
+AAR-18538 R_Date(3390,45)
+  68.3% probability
+    1742BC (19.1%) 1707BC
+    1702BC (49.2%) 1619BC
+  95.4% probability
+    1872BC ( 3.8%) 1846BC
+    1812BC ( 0.5%) 1806BC
+    1774BC (91.1%) 1536BC
+AAR-18537 R_Date(3313,25)
+  68.3% probability
+    1612BC (68.3%) 1540BC
+  95.4% probability
+    1626BC (95.4%) 1509BC
+AAR-18543 R_Date(3301,40)
+  68.3% probability
+    1613BC (64.8%) 1529BC
+    1524BC ( 3.5%) 1519BC
+  95.4% probability
+    1686BC (94.3%) 1497BC
+    1473BC ( 1.2%) 1461BC
+AAR-18540 R_Date(3286,25)
+  68.3% probability
+    1606BC (26.1%) 1581BC
+    1544BC (42.2%) 1510BC
+  95.4% probability
+    1614BC (95.4%) 1504BC
+AAR-18541 R_Date(3279,25)
+  68.3% probability
+    1606BC (20.1%) 1582BC
+    1544BC (48.2%) 1506BC
+  95.4% probability
+    1616BC (95.4%) 1500BC
+AAR-18542 R_Date(3226,25)
+  68.3% probability
+    1510BC (25.2%) 1492BC
+    1482BC (43.1%) 1450BC
+  95.4% probability
+    1532BC (95.4%) 1436BC
+HESTE2 
+ HESTE2 = ( Phase HESTE2
+HESTE2 Phase()
+) Phase HESTE2
+B_End HESTE2 Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+i : Using logs - function probability low
+Posterior 
+( MCMC(30000)
+Overall agreement  97.6%
+Dynamic agreement  98.1%
+B_Start HESTE1 Posterior 
+  68.3% probability
+    2154BC (68.3%) 1948BC
+  95.4% probability
+    2535BC (95.4%) 1902BC
+AAR-18536 Posterior 
+  68.3% probability
+    2020BC (68.3%) 1945BC
+  95.4% probability
+    2115BC ( 2.4%) 2098BC
+    2040BC (93.0%) 1894BC
+ Agreement  99.1%
+AAR-18535 Posterior 
+  68.3% probability
+    1947BC (68.3%) 1886BC
+  95.4% probability
+    2016BC ( 3.8%) 1997BC
+    1980BC (84.2%) 1876BC
+    1843BC ( 5.5%) 1822BC
+    1794BC ( 1.9%) 1780BC
+ Agreement 102.3%
+HESTE1 Posterior 
+  68.3% probability
+    2020BC (68.3%) 1760BC
+  95.4% probability
+    2238BC (95.4%) 1653BC
+B_Transition HESTE1/HESTE2 Posterior 
+  68.3% probability
+    1770BC (68.3%) 1640BC
+  95.4% probability
+    1908BC (95.4%) 1624BC
+AAR-18539 Posterior 
+  68.3% probability
+    1690BC (68.3%) 1624BC
+  95.4% probability
+    1744BC (95.4%) 1616BC
+ Agreement  98.1%
+AAR-18538 Posterior 
+  68.3% probability
+    1698BC (63.2%) 1610BC
+    1574BC ( 4.3%) 1563BC
+    1552BC ( 0.9%) 1550BC
+  95.4% probability
+    1744BC (95.4%) 1536BC
+ Agreement 102.1%
+AAR-18537 Posterior 
+  68.3% probability
+    1612BC (68.3%) 1541BC
+  95.4% probability
+    1626BC (95.4%) 1511BC
+ Agreement 100.5%
+AAR-18543 Posterior 
+  68.3% probability
+    1613BC (68.3%) 1530BC
+  95.4% probability
+    1678BC ( 3.3%) 1652BC
+    1644BC (92.2%) 1498BC
+ Agreement 103.6%
+AAR-18540 Posterior 
+  68.3% probability
+    1608BC (28.9%) 1578BC
+    1545BC (39.3%) 1510BC
+  95.4% probability
+    1614BC (95.4%) 1506BC
+ Agreement 100.0%
+AAR-18541 Posterior 
+  68.3% probability
+    1606BC (22.4%) 1580BC
+    1544BC (45.9%) 1506BC
+  95.4% probability
+    1614BC (95.4%) 1502BC
+ Agreement 100.0%
+AAR-18542 Posterior 
+  68.3% probability
+    1532BC (57.2%) 1488BC
+    1480BC (11.1%) 1466BC
+  95.4% probability
+    1601BC ( 2.3%) 1586BC
+    1540BC (93.1%) 1440BC
+ Agreement  87.8%
+HESTE2 Posterior 
+  68.3% probability
+    1672BC (68.3%) 1495BC
+  95.4% probability
+    1798BC (95.4%) 1420BC
+B_End HESTE2 Posterior 
+  68.3% probability
+    1514BC (68.3%) 1434BC
+  95.4% probability
+    1560BC (95.4%) 1327BC
+) MCMC(480000)

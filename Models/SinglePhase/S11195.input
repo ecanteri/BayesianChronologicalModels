@@ -1,0 +1,16 @@
+Plot(){
+	 Outlier_Model("ACERSPE",Exp(0.050000,-50,0),U(0,1),"t");
+	 Outlier_Model("CORYAVE",Exp(0.033333,-180,0),U(0,0),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start HOKO1");
+		 Phase("HOKO1"){
+		 	 R_Date("Ua-69774",2789,30);
+		 	 R_Date("Ua-69780",2786,30) {Outlier(1, "ACERSPE");};
+		 	 R_Date("Ua-69775",2746,29);
+		 	 R_Date("Ua-69778",2742,30) {Outlier(1, "CORYAVE");};
+		 	 Date("HOKO1");
+		 };
+		 Boundary("B_End HOKO1");
+	 };
+};

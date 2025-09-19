@@ -1,0 +1,2 @@
+PhaseID	From_68.3	To_68.3	From_95.4	To_95.4	mean	sigma	median	YearType
+HOKO1	2884	2793	2986	2726	2850	65	2852	calBP

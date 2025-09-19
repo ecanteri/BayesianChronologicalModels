@@ -1,0 +1,15 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median	YearType
+B_Start HOKO1	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+Ua-69774	2937	2851	2961	2784	Unmodelled	R_Date	Date	2887	45	2889	calBP
+Ua-69780	2935	2849	2959	2783	Unmodelled	R_Date	Date	2883	46	2884	calBP
+Ua-69775	2861	2782	2924	2764	Unmodelled	R_Date	Date	2830	38	2824	calBP
+Ua-69778	2857	2781	2922	2762	Unmodelled	R_Date	Date	2827	37	2822	calBP
+HOKO1	NA	NA	NA	NA	Unmodelled	Calculate	Date	NA	NA	NA	calBP
+B_End HOKO1	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+B_Start HOKO1	2950	2849	3059	2790	Modelled	Boundary	Date	2909	83	2890	calBP
+Ua-69774	2889	2794	2934	2785	Modelled	R_Date	Date	2861	37	2862	calBP
+Ua-69780	2887	2794	2929	2784	Modelled	R_Date	Date	2858	37	2860	calBP
+Ua-69775	2873	2795	2920	2776	Modelled	R_Date	Date	2840	32	2845	calBP
+Ua-69778	2871	2797	2918	2773	Modelled	R_Date	Date	2838	32	2842	calBP
+HOKO1	2884	2793	2986	2726	Modelled	Calculate	Date	2850	65	2852	calBP
+B_End HOKO1	2859	2771	2911	2646	Modelled	Boundary	Date	2792	70	2802	calBP

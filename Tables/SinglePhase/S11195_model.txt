@@ -1,0 +1,13 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median
+ACERSPE	NA	NA	NA	NA	Unmodelled	Outlier_Model	Model	NA	NA	NA
+Exp(0.05,-50,0)	-0.7	-0.25	NA	NA	Unmodelled	Exp	Model	-0.500023	0.00336913	-0.5
+U(0,1)	9.97466e-18	1	9.97466e-18	1	Unmodelled	U	Model	0.5	0.285774	0.5
+CORYAVE	NA	NA	NA	NA	Unmodelled	Outlier_Model	Model	NA	NA	NA
+Exp(0.033333,-180,0)	NA	NA	NA	NA	Unmodelled	Exp	Model	-1.8	0	-1.8
+U(0)	-0.5	0.5	-0.5	0.5	Unmodelled	U	Model	0	0	2.63678e-16
+ACERSPE	NA	NA	NA	NA	Modelled	Outlier_Model	Model	0	0	0
+Exp(0.05,-50,0)	NA	NA	NA	NA	Modelled	Exp	Model	0	0	0
+U(0,1)	0.005	1	1.34441e-17	1	Modelled	U	Model	0.49968	0.288596	0.5
+CORYAVE	-4.5	0.5	-8.5	0.5	Modelled	Outlier_Model	Model	-2.60542	1.65314	-2.5
+Exp(0.033333,-180,0)	NA	NA	NA	NA	Modelled	Exp	Model	-2.02374	0.593861	-1.98
+U(0)	-0.5	0.5	-0.5	0.5	Modelled	U	Model	0	0	1.3739e-15

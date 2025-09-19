@@ -1,0 +1,604 @@
+---
+title: "Bayesian chronological modeling in OxCal through R"
+author: "Elisabetta Canteri"
+date: '`r Sys.Date()`'
+output:
+  html_document:
+    toc: true
+    toc_float: true
+  pdf_document:
+    toc: true
+editor_options:
+  chunk_output_type: console
+---
+# Introduction
+
+This document aims at explaining the role of the functions used in the paper *"Automated chronological modelling of large quantities of 14C dates within a Bayesian framework"*. We will start with an overview of all the functions and then move to a few examples of how they were used in the paper. We will also briefly show how the data was cleaned and processed so that it is in the correct format for the functions.
+
+All data and code used in the paper is provided separately in the Supplementary Materials.
+
+## OxCal installation
+
+To run the functions and reproduce the results in the paper, OxCal needs to be installed on a computer or an external server. To do so, please follow the installation instructions on the OxCal website at <https://c14.arch.ox.ac.uk/oxcalhelp/readme.html#local>
+
+# Functions
+
+The functions used in the paper are divided in three categories:
+
+1.  Grouping of 14C dates based on the material used for dating.
+
+2.  Functions to write the OxCal CQL input scripts.
+
+3.  Functions to extract the model output.
+
+First of all, let's load the R file with the functions.
+
+```{r functions}
+source("./Scripts/FunctionsOxCal.R")
+```
+
+We can see that now they are all loaded in our Global Environment.
+
+## Grouping
+
+The function used for grouping is called `classify`. This function assigns the 14C dates to a group (1,2,3) based on the material and taxon that was used for dating. Being assigned to the group "1" means that the 14C date belongs to a short-lived taxon/material, group "2" is for medium-lived and group "3" is for long-lived.
+
+It takes 3 parameters: `material`, `material.species`, and `material.notes`. `material` can be anything like grain, seed, bone, charcoal, etc. `material.species` refers to the specific taxon, if available, related to that material. `material.notes` is added because in our data, sometimes the taxon or material was specified in the notes.
+
+```{r grouping function}
+print(classify)
+```
+
+In our chronological models, we assign an outlier probability of 1 for each group that is not "1", i.e. for each radiocarbon date that does not belong to a short-lived taxon/material.
+
+## OxCal input
+
+To run chronological models in OxCal, the input script needs to have a specific structure. Given that our goal was to date phases, the model requires information about sequences, boundaries, radiocarbon dates, calibration curve, phases, and outlier models.
+
+We have therefore created a set of functions that creates the text for each of these, in the correct format. For the boundaries, we added an option to say whether the phases are sequential or not, so whether we have a start and end boundary for each phase, or whether we need to have a transition between phases.
+
+Here is an example when having sequential phases:
+
+```{r boundary sequential}
+Boundary(c("Phase1", "Phase2"), sequential = TRUE)
+```
+
+The output is a list with 2 elements, each element containing the input text related to the boundary for each phase.
+
+Here is the same example with overlapping phases:
+
+```{r boundary overlapping}
+Boundary(c("Phase1", "Phase2"), sequential = FALSE)
+```
+
+As we can see, Phase 1 only has a start, while Phase 2 has a transition and then an end.
+
+Here is a list of all the functions:
+
+-   `Curve`: takes a parameter `calcurve`, which is a character string. Possible curve choices are: "IntCal20", "SHCal20", "Marine20". Calibration curves must be downloaded from the OxCal website and the local path where they are stored on the computer must be indicated in the `calcurvepath` parameter.
+
+-   `Sequence`: takes a parameter `name`, which is just a character string of own choice. Outputs a list containing the sequence information for the OxCal model.
+
+-   `Boundary`: as explained before, it takes a character string (names of the boundaries) and whether they are sequential or not.
+
+-   `RDates`: it takes 3 parameters. `d` are the radiocarbon dates. This is a data frame consisting of three columns ("LabID", "C14.Age", "C14.SD"), with labcode, radiocarbon age and radiocarbon age error. `outlier` can be set either TRUE or FALSE, depending on whether one wants to model the radiocarbon date according to a specific outlier model, and, in that case, the outlier probability is set using the `outlier.prob` parameter. If using a specific outlier model, the function requires the data frame of radiocarbon dates to include three additional columns: "OutlierProb", "Material" and "TaxonCode". "OutlierProb" gives a number for the outlier probability of each date, while "Material" and "TaxonCode" contain information about the material/taxon used for dating, which will match a tailor-made outlier model. "Material" cannot be blank (NA).
+
+-   `Phases`: takes a parameter `p` which is a character string. Used to name the phase.
+
+-   `Date`: this is equivalent to the `Date()` function in OxCal. It takes a parameter `p` which is a character string defining the name of the phase to be dated.
+
+-   `OutlierModels`: this function will print the code for a specific outlier model based on the "group" of the radiocarbon date (see "Grouping" section above), the material and the taxon of the sample used for dating. The function takes a parameter `d`, which is the data frame of radiocarbon dates. This data frame must include a column "Group" that indicates to which group the radiocarbon dates belong to. The "Group" is assigned using the `classify` function explained above. Other parameters of this function are `exp.species` and `exp.material`. These are two data frames (provided in Supplementary Material) with the values needed to create the custom outlier models based on specific materials and taxa.
+
+The outputs of all functions are in "list" format. These outputs are then combined together with the function `OxCal_input`.
+
+-   `OxCal_input`: takes 7 parameters. `curve`, `out.model`, `bound`, `phases`, `rdates`, and `date_p` are the variables created with the functions listed above for the calibration curve, the outlier model, the boundaries, phases, radiocarbon dates and phase date function. There is an extra parameter called `phase_type`, which can either be NULL (not specified) or "overlapping". If set to "overlapping", the OxCal input script will structure the code so that it takes into account transitional boundaries among phases.
+
+## OxCal output
+
+These functions are used to extract the values of the model from the .js output file. The coding of these functions has been inspired by a blog post written by Richard Telford (<https://quantpalaeo.wordpress.com/2016/11/19/oxcal-and-r/>), which we would like to thank.
+
+All functions include a parameter `js` which needs to be specified with the jason (.js) output file created when an OxCal model finishes running.
+
+-   `get.values`: extracts either likelihood or posterior values (when `posterior = T`) of any `target` (e.g. mean, sigma, median calibrated dates) from the output file.
+
+-   `get.model.agreement`: extracts model agreement indices. In this case, the `target` parameter can either be "model" or "overall".
+
+-   `get.lab.codes`: extracts the IDs of the radiocarbon dates in the model.
+
+-   `get.outlier`: extracts the prior and posterior probabilities of the outlier model and outlier sample (if specified). For more information visit <https://c14.arch.ox.ac.uk/oxcalhelp/hlp_analysis_oper.html#outlier> (Bronk Ramsey 2009)
+
+-   `get.probs`: extracts either likelihood or posterior (when `posterior = T`) probabilities of the radiocarbon samples listed in the OxCal model. The output is in BC/AD unless `calBP = TRUE`, where calibrated dates are converted to calBP.
+
+-   `get.results`: extracts the complete model output. This function will read the OxCal output from a directory specified with `filepath`, and will generate a set of tables:
+
+    -   "**dates**" table with uncalibrated and calibrated dates (mean, sigma, median, 68.3 and 95.4 posterior ranges) for start and end boundaries, radiocarbon samples and phases. The dates will be in BC/AD unless `calBP = TRUE`.
+
+    -   "**phase**" table with the calibrated dates for phases in the OxCal model (mean, sigma, median, 68.3 and 95.4 posterior ranges). The dates will be in BC/AD unless `calBP = TRUE`.
+
+    -   "**model**" table with likelihood and posterior probabilities for the parameters specified in the `Outlier_Model`, if specified.
+
+    -   "**outlier**" table with prior and posterior probabilities of a measure to be an outlier. Measures are usually the `Outlier_Model` and the radiocarbon samples.
+
+    -   "**agreement**" table with the agreement indices for individual samples (`A`), the model (`A_model`) and the overall individual agreement index (`A_overall`).
+
+        This function takes 8 parameters:
+
+        -   `filepath`: path to the directory with the model outputs.
+
+        -   `outdir`: path to the directory where to store results tables.
+
+        -   `site_id`: the name of the site of the model. Can be NULL, but this value is used to recognize the name of the files.
+
+        -   `phase_id`: the names of the phases as provided in the data. This parameter **cannot** be NULL.
+
+        -   `phase_dating`: logical (TRUE or FALSE). This parameter sets whether the modelled posteriors are to be extracted.
+
+        -   `outlier`: logical (TRUE or FALSE). This parameter sets whether the modelled posteriors for the outlier model are to be returned and the "outlier" table to be created.
+
+        -   `output.list`: logical (TRUE or FALSE). This parameter sets whether to not only write the results tables to file, but also to store them in a list.
+
+        -   `calBP`: logical (TRUE or FALSE). This parameter sets whether to return the calibrated dates in BC/AD or in calBP.
+
+# Examples
+
+Here we are going to show two examples: one with an automated script for single-phase sites, and one showing how we coded a multi-phase site. We will start by giving an overview of the data and how we processed it and then move to the examples.
+
+### Data
+
+We start by loading the libraries. These are required packages that need to be installed to be able to run the code below.
+
+```{r libraries, message=FALSE}
+library(data.table)
+library(stringr)
+library(gtools)
+library(pals)
+library(ggplot2)
+library(pbapply)
+library(parallel)
+library(doSNOW)
+library(rjson)
+```
+
+Now we can import the data:
+
+```{r data}
+DT <- readRDS("./Data/Crops.RData")
+str(DT)
+```
+
+This is the data we have on archaeobotanical samples. The aim is to date the phases in which we have these samples. We will use radiocarbon dates associated to the phases to create chronological models in OxCal which will give us the temporal range of these phases.
+
+Here are the radiocarbon samples for our phases:
+
+```{r c14}
+dates <- fread("./Data/Dates_raw.csv", na.strings = "")
+str(dates)
+```
+
+```{r plot data, echo = F, fig.dim=c(15, 10)}
+ggplot(data = dates[, .(.N), by = SiteID]) +
+  geom_col(aes(x = SiteID, y = N), color = 'white', linewidth = 0.1) +
+  geom_hline(aes(yintercept = mean(N)), linetype = 2, color = 'red2') +
+  theme_classic() +
+  theme(axis.text.x = element_blank()) +
+  ylab("N. samples") +
+  ggtitle(" Number of radiocarbon samples per site")
+
+ggplot(data = dates[, .(N = length(unique(PhaseID))), by = SiteID]) +
+  geom_col(aes(x = SiteID, y = N), color = 'white', linewidth = 0.1) +
+  geom_hline(aes(yintercept = mean(N)), linetype = 2, color = 'red2') +
+  theme_classic() +
+  theme(axis.text.x = element_blank()) +
+  ylab("N. phases") +
+  ggtitle(" Number of phases per site")
+
+ggplot(data = dates) +
+  geom_bar(aes(x = SiteID, fill = Material)) +
+  scale_fill_manual("Material", values = pals::brewer.paired(18)) +
+  theme_classic() +
+  guides(fill = guide_legend(byrow = T, ncol = 10,
+                      title.position = "top", 
+                      title.hjust = 0.5,
+                      label.theme = element_text(size = 8),
+                      direction = "horizontal")) +
+  theme(axis.text.x = element_blank(),
+        legend.position = "top") +
+  ylab("N. samples")
+```
+
+### Grouping
+
+Here we group by age, by dividing species between short-lived, medium-lived, and long-lived. The short-lived will give more precise calibration compared to the others, so they will have high priority when selecting 14C dates. For all other materials, we will have to see case by case, but some of them will not be used because unreliable. We will put them in a separate category, so we can still use them as last resort.
+
+-   Short-lived are plants and animals up to 10 years of lifespan
+
+-   Medium-lived are up to 100 years
+
+-   Long-lived are \>100 years
+
+```{r remove unreliable, eval = F}
+## Separate rows where "Material" is from completely unreliable sources
+material.remove <- c(NA, "residue: food", "carbonised residue", "sediment: organic", "organic substance", "shell", "residue", "sediment: humus", "shell",
+            "soil", "charred food residue", "potsherd", "humic acid")
+taxa.remove <- c("piscind", "phocind", "MOSBRSP")
+unreliable <- dates[Material %in% material.remove | TaxonCode %in% taxa.remove]
+unreliable <- rbind(unreliable, dates[grep("contamination", Flag)])
+
+# Remove also duplicated dates and date contamination
+dates <- dates[!(Material %in% material.remove | TaxonCode %in% taxa.remove)]
+dates <- dates[grep("contamination", Flag, invert = T)]
+```
+
+Now we create the groups for materials and taxa. And we assign the groups to the radiocarbon dates using the `classify` function.
+
+```{r grouping, eval = F}
+## Group
+material_groups <- list(short = c("organic temper", "bone (charred)", "bone", "charred plant macrofossils", "plant macrofossils",
+                                  "animal bone", "antler", "grain", "seed", "tooth", "grain (charred)", "bone / tooth",
+                                  "horn", "fruit (charred)", "acorn", "fruit", "Nutshell", "grain", "resin"),
+                        medium = c("human bone"),
+                        long = c("sediment: peat", "charcoal", "wood"))
+
+species_groups <- list(short = c("animind", "bosspec", "bostaur", "CERINDO", "canifam", "caprhir", "cervela", "equuspe",
+                                 "FILIVUL", "HORDSPE", "HORSHUN", "HORSNAK", "LINUSPE", "mamindl", "mammind", "ovicapwd",
+                                 "ovisari", "oviscap", "ovismus", "ovisspe", "PANIMIL", "PHRASPE", "PISUSPE", "POACIND",
+                                 "ruminde", "susscrd", "susscrf", "susspec", "TRIAEST", "TRIDISP", "TRIMODI", "TRITDIC",
+                                 "TRITHOR", "TRITMON", "TRITSPE", "TRITSPL", "FALLCON", "AVENSPE", "unguind", "VISCALB",
+                                 "VICIERV", "LENSCUL", "caprcap", "boscerv", "equuhyd", "cervind", "bosprim", "CARESPE",
+                                 "PHRAAUS", "RANUFIC", "HORSHUL", "SETAITA", "CHENHYB", "VICISPE", "PISUSAT", "LINUUSI",
+                                 "LATHSPE"),
+                       medium = c("CORYAVE", "ALNUSPE", "BETUSPE", "CORNSAN", "CORYSPE", "homosap", "MALOIDE",
+                                  "POPUSPE", "ROSAIND", "ROSASPE", "SALISPE", "PRUNSPI", "MALUSYL", "PYRUSPE"),
+                       long = c("ABIESPE", "ACERSPE", "ARBDECI", "FAGUSPE", "FRAXSPE", "JUNISPE", "PINUSPE",
+                                "QUERSPE", "TILISPE", "FRAXELC", "ULMUSPE", "QUERPUB")
+)
+
+## Assign groups
+dates[, Group := sapply(1:nrow(dates), function(n){
+  material <- dates$Material[n]
+  material.species <- dates$TaxonCode[n]
+  material.notes <- dates$MaterialNotes[n]
+  return(classify(material, material.species, material.notes))
+})]
+```
+
+Finally, we assign the outlier probability to the radiocarbon dates based on the groups they belong to.
+
+```{r outlier probability, eval = F}
+## Asign outlier probability based on group
+# Here we give a probability of 1 when the material is not short-lived
+dates[, OutlierProb := sapply(Group, function(g) ifelse(g > 1, 1, 0))]
+```
+
+```{r final data, echo = F}
+dates <- fread("./Data/Dates.csv", na.strings = "")
+```
+
+```{r final data show}
+str(dates)
+```
+
+As we can see, our data now contains a column called "Group" and a column called "OutlierProb". The latter will be used for the OxCal models.
+
+## 1. Automated chronological model for single-phase sites
+
+Now we are going to present how to automatically run an OxCal model for 10 single-phase sites.
+
+First of all, we check which sites have only one phase and we select the first 10.
+
+```{r single-phase sites}
+# Get IDs of single-phase sites
+sites_idx <- dates[, length(unique(PhaseID)), by = "SiteID"][V1 == 1, SiteID]
+
+# Get IDs of single-phase sites that have 3 or more radiocarbon dates
+sites_idx <- dates[SiteID %in% sites_idx][, .N, by = "SiteID"][N >= 3, SiteID]
+
+# Create new table with 10 random single-phase sites that have 3 or more radiocarbon dates
+dt <- dates[SiteID %in% sample(sites_idx, 10)]
+str(dt)
+```
+
+Now we can use the information in this table to generate OxCal models. First of all, we have to specify the different directories for the models to run. These directories are: `oxcalpath` that tells where OxCal has been downloaded on the computer; `calcurvepath` that tells where the calibration curve to be used is stored on the computer; `filedir` that tells where the model outputs will be stored; and `oudir` where the results will be saved. We also import the tables with the information needed to define the outlier models using the `OutlierModels` function, and all the other functions to run OxCal explained above.
+
+```{r dirs}
+## Assign directories
+oxcalpath <- "/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/OxCalMac"
+calcurvepath <- "/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c"
+filedir <- "/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/Vignette/Models/SinglePhase/"
+outdir <- "/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/Vignette/Tables/SinglePhase/"
+
+# Import data for outlier models
+exp.material <- fread("Data/EXP_Material.csv")
+exp.species <- fread("Data/EXP_Species.csv")
+
+# OxCal functions
+source("Scripts/FunctionsOxCal.R")
+```
+
+For our 10 single-phase sites, we are going to work in parallel so that we analyse 5 sites at the same time. Note that if using High Performance Computing (HPC), it would be possible to run tens to hundreds sites at the same time, based on the number of cores and memory capacity. Here is how to work in parallel:
+
+```{r parallel1}
+# Split data into a list, where each element of the list is a site
+m <- dt[order(PhaseID, -C14.Age, SiteID)]
+m <- split(dt, dt$SiteID)
+length(m) # 10 tables
+```
+
+```{r parallel2, eval = FALSE}
+# Parallel setup
+cls <- makeCluster(5) # work on 5 cores
+clusterExport(cls, list("m", "exp.species", "exp.material", "Curve", "OutlierModels", "Boundary", "Phases", "RDates", "Date", "OxCal_input", "oxcalpath", "calcurvepath", "filedir", "outdir"))
+
+# Run OxCal models
+pbapply::pblapply(m, function(d){
+  require(data.table)
+  require(pbapply)
+  
+  # Reorder by decreasing age
+  setorder(d, -C14.Age, by = PhaseID)
+
+  # Curve
+  calcurve <- Curve(calcurve = "IntCal20", calcurvepath)
+
+  # Outlier Models
+  models <- OutlierModels(d, exp.species, exp.material)
+  
+  # Boundary
+  bound <- Boundary(unique(d$PhaseID), sequential = F)
+  
+  # Phases
+  phases <- lapply(unique(d$PhaseID), function(n){Phases(unique(n))})
+
+  # RDates
+  rdates <- lapply(unique(d$PhaseID), function(n){
+    db <- d[PhaseID == n]
+    return(RDates(db, outlier = TRUE, outlier.prob = db$OutlierProb))
+  })
+
+  # Date phase
+  date_p <- lapply(unique(d$PhaseID), function(n){Date(unique(n))})
+
+  # Input
+  command <- OxCal_input(calcurve, models, bound, phases, rdates, date_p)
+
+  # Write to file
+  filename <- sprintf(paste0(filedir, "/%s.input"), unique(d$SiteID))
+  writeLines(command, con = filename)
+  
+  # Run OxCal
+  # print(unique(d$SiteID))
+  set.seed(1234)
+  system(paste(oxcalpath, filename), ignore.stdout = T, ignore.stderr = T)
+}, cl = cls)
+stopCluster(cls); registerDoSEQ(); gc()
+```
+
+As we can see, the folder **"Models"** now contains, for each site, a **.input** file, a **.js** file, a **.log** file, and a **.txt** file.
+
+The **.input** file contains the OxCal code for running the model, the one we generated using the `OxCal_input` function. The **.js** file contains the full model run, with results we are going to extract next. The **.log** contains the log of the model run and the **.txt** file contains part of the results of the model.
+
+To extract the results, we are now using functions that will work on the **.js** and **.txt** files.
+
+```{r results, eval=FALSE}
+# Extract results
+pbapply::pblapply(m, function(x){
+  get.results(filepath = filedir, outpath = outdir, site_id = unique(x$SiteID),
+              phase_id = unique(x$PhaseID), calBP = T, 
+              output.list = F, phase_dating = T, outlier = T)
+})
+```
+
+After running the `get.results` functions, new files have appeared in the **"Tables"** folder. These files include posterior information about the model agreement, the outlier probabilities, the outlier models, the calibrated radiocarbon dates, and the phase dating.
+
+Given that our goal was to model the date of phases, we can extract this information separately and build a table only with phase dates.
+
+```{r phase dating}
+# Import phases result tables
+phases_calib <- lapply(list.files("Vignette/Tables/SinglePhase/", pattern = "_phase.txt", full.names = T), read.delim)
+
+# Check length of list
+length(phases_calib)
+
+# Create table
+p.dt <- setDT(do.call(rbind, phases_calib))
+p.dt$SiteID <- unique(dt$SiteID)
+p.dt <- p.dt[, c(10, 1:9)]
+p.dt
+```
+
+## 2. Multi-phase site: S11258 Hestehaven, Denmark.
+
+Here we are going to show how to use some of the functions to build and tailor the OxCal input script for a multi-phase site.
+
+Hestehaven is a Late Neolithic-Early Bronze Age settlement located in Eastern Jutland. During 2011 excavation, four structures were identified and rich archaeobotanical assemblages from houses K1 and K4 provide important data about the agricultural practices in Denmark during the Late Neolithic-Early Bronze Age transition. A total of 9 AMS 14C ages measured on short-lived material from houses K1, K2 and K4 are available.
+
+We have data for two phases: HESTE1 dated to the Late Neolithic and HESTE2 dated to the Early Bronze Age. Belonging to phase HESTE1 is house K4 which was a NE-SW oriented two-aisled house with a strong presence of collected food plants, in the form of acorns, apples, and hazelnuts. The house is typologically dated to the Late Neolithic. 2 samples of charred acorn (AAR-18535) and charred cereal (AAR-18536) were selected from posthole A282 and 14C dated. Belonging to phase HESTE2 are houses K1 and K2. House K1 was a E-W oriented two-aisled house with a sunken floor area in the eastern part. At the bottom of the sunken floor, directly above the sandy floor layer/subsoil, was an 8–10 cm thick charred layer (A212) containing large amounts of carbonised cereal grains. The grain layer was interpreted as the remains of a granary burned along with the house. The house is typologically dated to the Late Neolithic or Early Bronze Age. 4 samples of charred cereals were 14C dated from the grain layer (AAR-18540 – 43). House K2 was a NE-SW oriented two-aisled house, but further interpretations remain uncertain due to preservation issues. 3 samples of charred cereal (AAR-18537) and charred hazelnut shell (AAR-18538 – 39) were selected from context A386 and 14C dated.
+
+```{r hestehavn}
+heste <- dates[SiteID == "S11258"]
+heste
+```
+
+As we can see, even if sample AAR-18535 is from a long-lived species (Quercus sp.), the material used for dating is the seed (acorn). In this case, we will categorize it as if it was a short-lived species, so with no offset and therefore not an outlier in the model.
+
+For this site, we are going to establish a boundary before HESTE1, then have a transitional boundary between HESTE1 and HESTE2 and finally put an end boundary after HESTE2.
+
+```{r multi-phase}
+# Create and change directories to store multi-phase site results
+filedir <- "/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/Vignette/Models/MultiPhase/"
+outdir <- "/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/Vignette/Tables/MultiPhase/"
+
+# Reorder samples by age
+setorder(heste, -C14.Age, by = "PhaseID")
+
+# The phases are contiguous and not sequential, with a transitional boundary in between
+sequential <- F
+
+# Boundary
+bound <- Boundary(unique(heste$PhaseID), sequential = sequential)
+bound
+
+# Curve
+calcurve <- Curve(calcurve = "IntCal20", calcurvepath)
+
+# Outlier Models
+models <- OutlierModels(heste, exp.species, exp.material)
+models # no outlier models for this site
+
+# Phases
+phases <- lapply(unique(heste$PhaseID), function(n){
+  Phases(unique(n))
+})
+phases
+
+# RDates
+rdates <- lapply(unique(heste$PhaseID), function(n){
+  db <- heste[PhaseID == n]
+  setorder(db, -C14.Age, by = PhaseID)
+  return(RDates(db, outlier = TRUE, 
+                outlier.prob = db$OutlierProb))
+})
+rdates
+
+# Date phase
+date_p <- lapply(unique(heste$PhaseID), function(n){
+  Date(unique(n))
+})
+date_p
+
+# Input
+command <- OxCal_input(calcurve, models, bound, phases, rdates, date_p)
+writeLines(command)
+
+# Write to file
+filename <- sprintf(paste0(filedir, "/%s.input"), unique(heste$SiteID))
+
+writeLines(command, con = filename) # writes the file
+```
+
+```{r multi-phase oxcal, eval=FALSE}
+# Run OxCal
+set.seed(1234)
+system(paste(oxcalpath, filename))
+```
+
+The OxCal model has run and we can extract information from the output.
+
+```{r multi-phase results}
+get.results(filepath = filedir, outpath = outdir, site_id = unique(heste$SiteID),
+            phase_id = unique(heste$PhaseID), phase_dating = T, outlier = T, 
+            output.list = F, calBP = T)
+```
+
+Now that we have the results tables, we can look at the modelled phase dates.
+
+```{r muli-phase phase dates}
+heste_phases <- read.delim(list.files(path = outdir, pattern = paste0(unique(heste$SiteID), "_phase"), full.names = T))
+heste_phases
+```
+
+Another thing we can do is to plot the calibrated dates.
+
+```{r multi-phase calibration, fig.dim=c(20, 22)}
+# SiteID
+sid <- unique(heste$SiteID)
+
+# Read "dates" table
+calibd <- read.delim(list.files(outdir, paste0(sid, "_dates"), full.names = T))
+
+# Change Variable names for start and end boundary
+calibd$Variable <- str_replace(unique(calibd$Variable), "B_Start", "Start")
+calibd$Variable <- str_replace(unique(calibd$Variable), "B_End", "End")
+calibd$Variable <- str_replace(unique(calibd$Variable), "B_Transition", "")
+
+# Read .js file
+js <- readLines(list.files(filedir, pattern = paste0(sid, ".js"), full.names = T))
+
+# Extract posterior densities
+posterior.dens <- get.probs(js, calBP = T)
+posterior.dens$type  <- "Posterior"
+
+# Get likelihood densities (uncalibrated)
+likelihood.dens <- get.probs(js, posterior = F, calBP = T)
+likelihood.dens$type <- "Likelihood"
+
+# Bind together
+dens <- rbind(posterior.dens, likelihood.dens)
+
+# Extract coding of samples generated by OxCal
+codes <- js[grep("^(ocd\\[\\d+\\]).op", js)]
+codes
+
+# Extract IDs of samples from the coding
+oxcalid <- stringr::str_extract(codes, "([a-z]+\\[\\d+\\])")
+oxcalid
+
+# Extract variable types from the coding
+var <- gsub("\"", "", stringr::str_extract(codes, "(\"[A-z]+\")"))
+var
+
+# Bind together and create table
+codes <- as.data.frame(cbind(lab = oxcalid, Variable_type = var))
+codes
+
+# Remove the "Curve", "Phase" and "Sequence", as these will not be needed for the plot
+# "Calculate" is actually the modelled date for the phases
+codes <- codes[-which(codes$Variable_type %in% c("Curve", "Phase", "Sequence")),]
+codes
+
+# Add the variable names to the table
+codes$Variable <- calibd[which(calibd$Type == "Modelled"),]$Variable
+codes
+
+# Filter to keep only densities for the variables we need
+dens <- dens[which(dens$lab %in% codes$lab),]
+dens$Variable <- factor(dens$lab, levels = unique(dens$lab), labels = codes[which(codes$lab %in% unique(dens$lab)), "Variable"])
+dens <- merge(dens, codes[, c("lab", "Variable_type")], by = "lab")
+head(dens)
+
+# Change variable names to factors for plotting
+calibd$Variable <- factor(calibd$Variable, levels = unique(calibd$Variable), labels = unique(calibd$Variable))
+dens$Variable_type <- factor(dens$Variable_type, 
+                             levels = rev(unique(dens$Variable_type)), 
+                             labels = c("Boundary", "Phase", "RDate"))
+
+# Keep only modelled date range
+calibd <- calibd[which(calibd$Type == "Modelled"),]
+
+# Create a color variable for plotting
+colors <- pals::brewer.set1(3)
+
+# Plot
+ggplot(dens) +
+  # posterior density
+  geom_area(aes(x = date, y = prob, fill = Variable_type, alpha = type), color = "grey30") +
+  # Add 95.4% range and mean
+  geom_pointrange(data = calibd, 
+                  aes(x = mean, xmin = `To_95.4`, xmax = `From_95.4`, y = 0)) +
+  # Add median of 95.4% range
+  geom_point(data = calibd,
+             aes(x = median, y = 0), shape = 23, size = 3, fill = 'white') +
+  # Set color scheme
+  scale_fill_manual("", values = colors) +
+  # Set degree of transparency
+  scale_alpha_manual("", values = c(0.25, 1)) +
+  # Plot each sample separately and put into grid
+  facet_grid(rows = vars(Variable)) +
+  theme_classic() +
+  # Set range of x-axis to match the 95.4% range across all dates
+  xlim(max(calibd[, "From_95.4"]), min(calibd[, "To_95.4"])) +
+  # Set x and y labels
+  xlab("Modelled date (cal BP)") +
+  ylab("Probability") +
+  # Add title
+  ggtitle(sid) +
+  # Fix size and face of text and position of legend
+  theme(plot.title = element_text(hjust = 0.5, face = 'bold', size = 22),
+  legend.position = "right",
+  legend.direction = "vertical",
+  legend.text = element_text(size = 20),
+  axis.text = element_text(size = 18),
+  axis.title = element_text(size = 20),
+  strip.text = element_text(size = 12))
+```
+

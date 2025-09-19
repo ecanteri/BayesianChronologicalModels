@@ -1,0 +1,7 @@
+Outlier_Model	PosteriorProb	PriorProb
+ACERSPE	0	0
+CORYAVE	0	0
+Ua-69774	0	0
+Ua-69780	1	1
+Ua-69775	0	0
+Ua-69778	1	1

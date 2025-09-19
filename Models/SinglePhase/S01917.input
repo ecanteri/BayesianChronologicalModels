@@ -1,0 +1,18 @@
+Plot(){
+	 Outlier_Model("charcoal",Exp(0.029412,-20,0),U(0,2),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start FE");
+		 Phase("FE"){
+		 	 R_Date("OxA-2590",4580,80);
+		 	 R_Date("Hv-8450",4500,65) {Outlier(1, "charcoal");};
+		 	 R_Date("Hv-8453",4400,65) {Outlier(1, "charcoal");};
+		 	 R_Date("OxA-2587",4400,80);
+		 	 R_Date("OxA-2591",4350,80);
+		 	 R_Date("OxA-2589",4320,130);
+		 	 R_Date("OxA-2588",4230,70);
+		 	 Date("FE");
+		 };
+		 Boundary("B_End FE");
+	 };
+};

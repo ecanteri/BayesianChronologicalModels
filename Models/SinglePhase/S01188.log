@@ -1,0 +1,229 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+Exp(0.002994,-200,0)
+Warning! Not calculating range
+Warning! Not calculating range
+Warning! Not calculating range
+U(0,1)
+  68.3% probability
+    0 (68.3%) 1
+  95.4% probability
+    0 (95.4%) 1
+QUERSPE Outlier_Model()
+Exp(0.029412,-200,0)
+Warning! Not calculating range - QUERSPE
+Warning! Not calculating range - QUERSPE
+Warning! Not calculating range - QUERSPE
+U(0)
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+MALUSYL Outlier_Model()
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start BTH Boundary()
+GU-1828 R_Date(5030,60)
+  68.3% probability
+    3945BC (37.4%) 3854BC
+    3846BC ( 4.2%) 3834BC
+    3819BC (21.4%) 3764BC
+    3730BC ( 5.3%) 3714BC
+  95.4% probability
+    3958BC (91.0%) 3702BC
+    3680BC ( 4.4%) 3656BC
+GU-1831 R_Date(5015,125)
+  68.3% probability
+    3946BC (64.5%) 3705BC
+    3674BC ( 3.8%) 3658BC
+  95.4% probability
+    4214BC ( 0.2%) 4207BC
+    4160BC ( 0.8%) 4136BC
+    4054BC (94.4%) 3527BC
+OxA-1769 R_Date(5010,90)
+  68.3% probability
+    3943BC (27.2%) 3860BC
+    3814BC (36.8%) 3706BC
+    3673BC ( 4.3%) 3658BC
+  95.4% probability
+    3974BC (95.4%) 3640BC
+GU-1830 R_Date(4970,75)
+  68.3% probability
+    3900BC ( 6.6%) 3880BC
+    3800BC (61.7%) 3650BC
+  95.4% probability
+    3946BC (95.4%) 3641BC
+GU-1832 R_Date(4970,60)
+  68.3% probability
+    3796BC (68.3%) 3652BC
+  95.4% probability
+    3946BC (19.7%) 3855BC
+    3846BC ( 1.3%) 3834BC
+    3819BC (74.4%) 3642BC
+OxA-1768 R_Date(4940,70)
+  68.3% probability
+    3784BC (68.3%) 3644BC
+  95.4% probability
+    3946BC (94.7%) 3632BC
+    3552BC ( 0.7%) 3542BC
+OxA-1767 R_Date(4820,80)
+  68.3% probability
+    3703BC ( 6.3%) 3678BC
+    3656BC (62.0%) 3516BC
+  95.4% probability
+    3770BC (82.3%) 3492BC
+    3462BC (13.1%) 3375BC
+GU-1829 R_Date(4785,150)
+  68.3% probability
+    3708BC ( 6.3%) 3668BC
+    3662BC (62.0%) 3370BC
+  95.4% probability
+    3951BC (89.6%) 3314BC
+    3296BC ( 0.3%) 3286BC
+    3240BC ( 5.6%) 3104BC
+BTH 
+ BTH = ( Phase BTH
+BTH Phase()
+) Phase BTH
+B_End BTH Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+i : Using logs - function probability low
+Warning! ZERO distribution - B_End BTH
+Warning! ZERO distribution - B_End BTH
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Posterior 
+( MCMC(30000)
+Overall agreement  95.5%
+Dynamic agreement  94.0%
+QUERSPE Posterior 
+Posterior 
+Posterior 
+  68.3% probability
+    0 ( 2.1%) 0
+    0 ( 4.6%) 0
+    0 ( 3.1%) 0
+    0 ( 1.7%) 0
+    0 ( 9.6%) 0
+    0 (13.6%) 0
+    0 ( 1.4%) 1
+    1 ( 3.9%) 1
+    1 ( 6.9%) 1
+    1 ( 1.9%) 1
+    1 (12.1%) 1
+    1 ( 4.2%) 1
+    1 ( 3.3%) 1
+  95.4% probability
+    0 (95.4%) 1
+ Agreement 100.0%
+MALUSYL Posterior 
+  68.3% probability
+    -5 (68.3%) 2
+  95.4% probability
+    -9 (95.4%) 2
+Posterior 
+Posterior 
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+ Agreement 100.0%
+B_Start BTH Posterior 
+  68.3% probability
+    3826BC (68.3%) 3703BC
+  95.4% probability
+    3960BC (95.4%) 3656BC
+GU-1828 Posterior 
+  68.3% probability
+    3781BC (59.7%) 3700BC
+    3672BC ( 8.6%) 3657BC
+  95.4% probability
+    3851BC (95.4%) 3645BC
+ Agreement  83.3%
+GU-1831 Posterior 
+  68.3% probability
+    3770BC (68.3%) 3660BC
+  95.4% probability
+    3866BC (95.4%) 3632BC
+ Agreement 114.4%
+OxA-1769 Posterior 
+  68.3% probability
+    3773BC (56.8%) 3693BC
+    3679BC (11.5%) 3658BC
+  95.4% probability
+    3884BC ( 0.3%) 3878BC
+    3850BC (95.1%) 3637BC
+ Agreement 105.7%
+GU-1830 Posterior 
+  68.3% probability
+    3769BC (56.4%) 3692BC
+    3680BC (11.9%) 3660BC
+  95.4% probability
+    3884BC ( 0.2%) 3880BC
+    3819BC (95.3%) 3635BC
+ Agreement 119.0%
+GU-1832 Posterior 
+  68.3% probability
+    3769BC (58.0%) 3695BC
+    3676BC (10.2%) 3660BC
+  95.4% probability
+    3806BC (95.4%) 3640BC
+ Agreement 117.8%
+OxA-1768 Posterior 
+  68.3% probability
+    3764BC (68.3%) 3670BC
+  95.4% probability
+    3802BC (95.4%) 3638BC
+ Agreement 120.1%
+OxA-1767 Posterior 
+  68.3% probability
+    3766BC (64.2%) 3671BC
+    3654BC ( 4.1%) 3646BC
+  95.4% probability
+    3796BC (95.4%) 3580BC
+ Agreement  61.2%
+GU-1829 Posterior 
+  68.3% probability
+    3770BC (68.3%) 3662BC
+  95.4% probability
+    3822BC (95.4%) 3560BC
+ Agreement  83.2%
+BTH Posterior 
+  68.3% probability
+    3770BC (68.3%) 3661BC
+  95.4% probability
+    3886BC (95.4%) 3592BC
+B_End BTH Posterior 
+  68.3% probability
+    3732BC (68.3%) 3620BC
+  95.4% probability
+    3776BC (95.4%) 3504BC
+) MCMC(960000)

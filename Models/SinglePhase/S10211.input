@@ -1,0 +1,46 @@
+Plot(){
+	 Outlier_Model("homosap",Exp(0.041667,-140,0),U(0,0),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start STARC1");
+		 Phase("STARC1"){
+		 	 R_Date("OxA-8561",6975,60);
+		 	 R_Date("GrN-9036",6920,45);
+		 	 R_Date("BRAMS-2456",6866,28);
+		 	 R_Date("BRAMS-2458",6851,27);
+		 	 R_Date("GrN-7155",6835,70);
+		 	 R_Date("GrN-9035",6835,45);
+		 	 R_Date("BRAMS-2189",6835,29);
+		 	 R_Date("BRAMS-2190",6797,29);
+		 	 R_Date("OxA-8617",6785,55) {Outlier(1, "homosap");};
+		 	 R_Date("BRAMS-2457",6783,27);
+		 	 R_Date("OxA-8563",6765,55);
+		 	 R_Date("BRAMS-2191",6760,28);
+		 	 R_Date("OxA-8562",6730,60);
+		 	 R_Date("BRAMS-2194",6701,28);
+		 	 R_Date("GrN-8231",6700,70) {Outlier(1, "homosap");};
+		 	 R_Date("GrN-9037",6700,55);
+		 	 R_Date("BRAMS-2398",6695,27);
+		 	 R_Date("BRAMS-2408",6693,27) {Outlier(1, "homosap");};
+		 	 R_Date("BRAMS-2407",6671,27) {Outlier(1, "homosap");};
+		 	 R_Date("BRAMS-2198",6667,28);
+		 	 R_Date("BRAMS-2197",6665,28);
+		 	 R_Date("BRAMS-2459",6664,27);
+		 	 R_Date("GrN-9034",6640,45);
+		 	 R_Date("BRAMS-2195",6635,28);
+		 	 R_Date("BRAMS-2192",6633,28);
+		 	 R_Date("BRAMS-2196",6631,28);
+		 	 R_Date("BRAMS-2187",6620,28);
+		 	 R_Date("GrN-6629",6615,65);
+		 	 R_Date("BRAMS-2188",6611,28);
+		 	 R_Date("GrN-6626",6610,65);
+		 	 R_Date("GrN-7154",6610,100);
+		 	 R_Date("OxA-8559",6565,55) {Outlier(1, "homosap");};
+		 	 R_Date("GrN-6627",6545,105);
+		 	 R_Date("OxA-8560",6480,55);
+		 	 R_Date("GrN-9033",6475,60);
+		 	 Date("STARC1");
+		 };
+		 Boundary("B_End STARC1");
+	 };
+};

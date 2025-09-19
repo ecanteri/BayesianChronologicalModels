@@ -1,0 +1,23 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median	YearType
+B_Start MNVLDV1	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+Ly-1735	7309	6858	7478	6655	Unmodelled	R_Date	Date	7070	211	7076	calBP
+Ly-2324	7161	6796	7309	6664	Unmodelled	R_Date	Date	6984	169	6985	calBP
+Lyon-3566	7151	6906	7157	6887	Unmodelled	R_Date	Date	7001	77	6980	calBP
+Lyon-3568	6990	6898	7154	6801	Unmodelled	R_Date	Date	6962	71	6951	calBP
+SacA-5462	6990	6898	7154	6801	Unmodelled	R_Date	Date	6962	71	6951	calBP
+Lyon-3567	6979	6885	7149	6797	Unmodelled	R_Date	Date	6925	61	6922	calBP
+Lyon-3570	6949	6853	6989	6795	Unmodelled	R_Date	Date	6902	54	6905	calBP
+Ly-2323	6895	6445	7157	6304	Unmodelled	R_Date	Date	6703	223	6692	calBP
+MNVLDV1	NA	NA	NA	NA	Unmodelled	Calculate	Date	NA	NA	NA	calBP
+B_End MNVLDV1	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+B_Start MNVLDV1	7001	6934	7048	6898	Modelled	Boundary	Date	6971	43	6966	calBP
+Ly-1735	6967	6904	7013	6864	Modelled	R_Date	Date	6939	37	6939	calBP
+Ly-2324	6965	6904	7009	6864	Modelled	R_Date	Date	6937	36	6938	calBP
+Lyon-3566	6973	6905	6994	6891	Modelled	R_Date	Date	6944	28	6945	calBP
+Lyon-3568	6964	6905	6989	6889	Modelled	R_Date	Date	6938	27	6940	calBP
+SacA-5462	6964	6905	6990	6890	Modelled	R_Date	Date	6939	27	6940	calBP
+Lyon-3567	6957	6902	6987	6885	Modelled	R_Date	Date	6933	27	6935	calBP
+Lyon-3570	6954	6899	6987	6879	Modelled	R_Date	Date	6930	27	6932	calBP
+Ly-2323	6965	6902	7004	6856	Modelled	R_Date	Date	6933	36	6935	calBP
+MNVLDV1	6966	6903	7011	6860	Modelled	Calculate	Date	6936	37	6938	calBP
+B_End MNVLDV1	6945	6880	6977	6818	Modelled	Boundary	Date	6902	41	6907	calBP

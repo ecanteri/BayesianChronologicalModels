@@ -1,0 +1,14 @@
+Outlier_Model	PosteriorProb	PriorProb
+ABIESPE	0	0
+FRAXSPE	0	0
+QUERSPE	0	0
+ALNUSPE	0	0
+H-61149	1	1
+KN-I597	1	1
+LJ-1265	1	1
+LJ-1279	1	1
+K-540	1	1
+B-45	1	1
+K-539	1	1
+B-44	1	1
+B-43	1	1

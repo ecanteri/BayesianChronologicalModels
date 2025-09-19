@@ -1,0 +1,172 @@
+OxCal v4.4.4 Bronk Ramsey (2021); r:5
+Atmospheric data from Reimer et al (2020)
+Exp(0.05,-50,0)
+  68.3% probability
+    -1 (68.3%) -0
+Warning! Not calculating range
+Warning! Not calculating range
+U(0,1)
+  68.3% probability
+    0 (68.3%) 1
+  95.4% probability
+    0 (95.4%) 1
+ACERSPE Outlier_Model()
+Exp(0.033333,-180,0)
+Warning! Not calculating range - ACERSPE
+Warning! Not calculating range - ACERSPE
+Warning! Not calculating range - ACERSPE
+U(0)
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+CORYAVE Outlier_Model()
+IntCal20 Curve(/projects/racimolab/people/msb290/Domestication/OxCal/bin/intcal20.14c)
+Atmospheric data from Reimer et al (2020)
+B_Start HOKO1 Boundary()
+Ua-69774 R_Date(2789,30)
+  68.3% probability
+    989BC (68.3%) 902BC
+  95.4% probability
+    1012BC (83.1%) 892BC
+    881BC (12.3%) 836BC
+Ua-69780 R_Date(2786,30)
+  68.3% probability
+    986BC (68.3%) 900BC
+  95.4% probability
+    1010BC (81.0%) 891BC
+    882BC (14.5%) 835BC
+Ua-69775 R_Date(2746,29)
+  68.3% probability
+    912BC (19.9%) 891BC
+    882BC (48.3%) 834BC
+  95.4% probability
+    976BC ( 4.9%) 952BC
+    935BC (90.6%) 816BC
+Ua-69778 R_Date(2742,30)
+  68.3% probability
+    908BC (68.3%) 833BC
+  95.4% probability
+    974BC ( 3.6%) 954BC
+    934BC (91.8%) 814BC
+HOKO1 
+ HOKO1 = ( Phase HOKO1
+HOKO1 Phase()
+) Phase HOKO1
+B_End HOKO1 Boundary()
+( Sequence 
+Sequence()
+) Sequence 
+Warning! ZERO distribution - B_End HOKO1
+Warning! ZERO distribution - B_End HOKO1
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Warning! ZERO distribution
+Posterior 
+( MCMC(30000)
+Overall agreement  99.4%
+Dynamic agreement  98.8%
+ACERSPE Posterior 
+Posterior 
+Posterior 
+  68.3% probability
+    0 ( 8.7%) 0
+    0 ( 1.1%) 0
+    0 ( 2.1%) 0
+    0 ( 6.6%) 0
+    0 ( 4.9%) 0
+    0 ( 7.4%) 0
+    0 ( 1.3%) 0
+    0 ( 2.7%) 1
+    1 (18.7%) 1
+    1 ( 7.3%) 1
+    1 ( 2.5%) 1
+    1 ( 3.9%) 1
+    1 ( 1.1%) 1
+  95.4% probability
+    0 (95.4%) 1
+ Agreement 100.0%
+CORYAVE Posterior 
+  68.3% probability
+    -5 (68.3%) 0
+  95.4% probability
+    -9 (95.4%) 0
+Posterior 
+Posterior 
+  68.3% probability
+    -0 (68.3%) 1
+  95.4% probability
+    -0 (95.4%) 1
+ Agreement 100.0%
+B_Start HOKO1 Posterior 
+  68.3% probability
+    1002BC (68.3%) 901BC
+  95.4% probability
+    1111BC (95.4%) 842BC
+Ua-69774 Posterior 
+  68.3% probability
+    941BC (54.2%) 895BC
+    870BC (14.1%) 846BC
+  95.4% probability
+    986BC (95.4%) 836BC
+ Agreement  98.0%
+Ua-69780 Posterior 
+  68.3% probability
+    938BC (54.5%) 893BC
+    869BC (13.8%) 846BC
+  95.4% probability
+    980BC (95.4%) 836BC
+ Agreement 103.1%
+Ua-69775 Posterior 
+  68.3% probability
+    924BC (45.1%) 888BC
+    876BC (23.2%) 847BC
+  95.4% probability
+    972BC ( 3.5%) 952BC
+    936BC (92.0%) 828BC
+ Agreement 100.6%
+Ua-69778 Posterior 
+  68.3% probability
+    922BC (46.6%) 886BC
+    875BC (21.7%) 849BC
+  95.4% probability
+    970BC ( 3.3%) 951BC
+    935BC (92.1%) 825BC
+ Agreement  96.9%
+HOKO1 Posterior 
+  68.3% probability
+    936BC (68.3%) 845BC
+  95.4% probability
+    1038BC (95.4%) 778BC
+B_End HOKO1 Posterior 
+  68.3% probability
+    911BC (68.3%) 823BC
+  95.4% probability
+    963BC ( 1.0%) 944BC
+    931BC (94.5%) 698BC
+) MCMC(960000)

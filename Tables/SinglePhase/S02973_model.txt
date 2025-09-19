@@ -1,0 +1,7 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median
+homosap	NA	NA	NA	NA	Unmodelled	Outlier_Model	Model	NA	NA	NA
+Exp(0.041667,-140,0)	NA	NA	NA	NA	Unmodelled	Exp	Model	-1.4	7.24125e-08	-1.4
+U(0)	-0.5	0.5	-0.5	0.5	Unmodelled	U	Model	0	0	2.63678e-16
+homosap	-3.5	1.5	-7.5	1.5	Modelled	Outlier_Model	Model	-1.54773	1.56191	-1.5
+Exp(0.041667,-140,0)	NA	NA	NA	NA	Modelled	Exp	Model	-1.04616	0.925653	-0.98
+U(0)	-0.5	0.5	-0.5	0.5	Modelled	U	Model	0	0	1.3739e-15

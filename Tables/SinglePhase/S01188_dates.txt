@@ -1,0 +1,23 @@
+Variable	From_68.3	To_68.3	From_95.4	To_95.4	Type	Variable_type	Parameter	mean	sigma	median	YearType
+B_Start BTH	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+GU-1828	5893	5663	5907	5604	Unmodelled	R_Date	Date	5774	82	5777	calBP
+GU-1831	5895	5607	6162	5475	Unmodelled	R_Date	Date	5767	138	5762	calBP
+OxA-1769	5891	5607	5922	5589	Unmodelled	R_Date	Date	5757	100	5751	calBP
+GU-1830	5849	5598	5894	5589	Unmodelled	R_Date	Date	5722	92	5708	calBP
+GU-1832	5744	5601	5894	5590	Unmodelled	R_Date	Date	5715	84	5700	calBP
+OxA-1768	5732	5593	5894	5491	Unmodelled	R_Date	Date	5692	88	5679	calBP
+OxA-1767	5651	5464	5719	5323	Unmodelled	R_Date	Date	5532	99	5533	calBP
+GU-1829	5656	5318	5899	5052	Unmodelled	R_Date	Date	5495	190	5503	calBP
+BTH	NA	NA	NA	NA	Unmodelled	Calculate	Date	NA	NA	NA	calBP
+B_End BTH	NA	NA	NA	NA	Unmodelled	Boundary	Date	NA	NA	NA	calBP
+B_Start BTH	5774	5651	5909	5605	Modelled	Boundary	Date	5736	80	5722	calBP
+GU-1828	5729	5605	5799	5593	Modelled	R_Date	Date	5687	55	5681	calBP
+GU-1831	5719	5608	5814	5580	Modelled	R_Date	Date	5679	58	5674	calBP
+OxA-1769	5721	5606	5833	5585	Modelled	R_Date	Date	5680	55	5675	calBP
+GU-1830	5717	5608	5832	5583	Modelled	R_Date	Date	5675	51	5672	calBP
+GU-1832	5717	5608	5754	5588	Modelled	R_Date	Date	5674	48	5672	calBP
+OxA-1768	5713	5619	5751	5586	Modelled	R_Date	Date	5670	48	5667	calBP
+OxA-1767	5715	5594	5744	5528	Modelled	R_Date	Date	5647	56	5648	calBP
+GU-1829	5718	5611	5770	5508	Modelled	R_Date	Date	5658	62	5659	calBP
+BTH	5719	5609	5835	5540	Modelled	Calculate	Date	5671	67	5669	calBP
+B_End BTH	5680	5568	5724	5452	Modelled	Boundary	Date	5605	73	5612	calBP

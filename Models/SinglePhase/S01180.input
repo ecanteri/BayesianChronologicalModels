@@ -1,0 +1,26 @@
+Plot(){
+	 Outlier_Model("FRAXSPE",Exp(0.020000,-300,0),U(0,0),"t");
+	 Outlier_Model("FAGUSPE",Exp(0.010000,-600,0),U(0,0),"t");
+	 Outlier_Model("wood",Exp(0.029412,-20,0),U(0,2),"t");
+	 Outlier_Model("PINUSPE",Exp(0.007463,-200,0),U(0,1),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start BBT");
+		 Phase("BBT"){
+		 	 R_Date("KIA-31090",4555,45) {Outlier(1, "FRAXSPE");};
+		 	 R_Date("KIA-31093",4532,30) {Outlier(1, "FAGUSPE");};
+		 	 R_Date("Hd-17311",4510,57) {Outlier(1, "wood");};
+		 	 R_Date("KIA-29266",4493,30);
+		 	 R_Date("KIA-31091",4475,25) {Outlier(1, "wood");};
+		 	 R_Date("KIA-29268",4465,25);
+		 	 R_Date("KIA-31092",4465,25);
+		 	 R_Date("Hd-21149",4453,34) {Outlier(1, "PINUSPE");};
+		 	 R_Date("Hd-21146",4449,29) {Outlier(1, "FRAXSPE");};
+		 	 R_Date("Hd-21161",4420,28) {Outlier(1, "FRAXSPE");};
+		 	 R_Date("KIA-28904",4407,35) {Outlier(1, "FAGUSPE");};
+		 	 R_Date("KIA-29267",4369,25);
+		 	 Date("BBT");
+		 };
+		 Boundary("B_End BBT");
+	 };
+};

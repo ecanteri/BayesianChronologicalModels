@@ -1,0 +1,21 @@
+Plot(){
+	 Outlier_Model("QUERSPE",Exp(0.002994,-200,0),U(0,1),"t");
+	 Outlier_Model("charcoal",Exp(0.029412,-20,0),U(0,2),"t");
+	 Outlier_Model("MALUSYL",Exp(0.029412,-200,0),U(0,0),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start BTH");
+		 Phase("BTH"){
+		 	 R_Date("GU-1828",5030,60) {Outlier(1, "QUERSPE");};
+		 	 R_Date("GU-1831",5015,125) {Outlier(1, "charcoal");};
+		 	 R_Date("OxA-1769",5010,90) {Outlier(1, "MALUSYL");};
+		 	 R_Date("GU-1830",4970,75) {Outlier(1, "charcoal");};
+		 	 R_Date("GU-1832",4970,60) {Outlier(1, "charcoal");};
+		 	 R_Date("OxA-1768",4940,70);
+		 	 R_Date("OxA-1767",4820,80);
+		 	 R_Date("GU-1829",4785,150) {Outlier(1, "charcoal");};
+		 	 Date("BTH");
+		 };
+		 Boundary("B_End BTH");
+	 };
+};

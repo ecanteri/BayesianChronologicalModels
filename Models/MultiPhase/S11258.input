@@ -1,0 +1,25 @@
+Plot(){
+
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start HESTE1");
+		 Phase("HESTE1"){
+		 	 R_Date("AAR-18536",3634,26);
+		 	 R_Date("AAR-18535",3567,25);
+		 	 Date("HESTE1");
+		 };
+
+		 Boundary("B_Transition HESTE1/HESTE2");
+		 Phase("HESTE2"){
+		 	 R_Date("AAR-18539",3401,25);
+		 	 R_Date("AAR-18538",3390,45);
+		 	 R_Date("AAR-18537",3313,25);
+		 	 R_Date("AAR-18543",3301,40);
+		 	 R_Date("AAR-18540",3286,25);
+		 	 R_Date("AAR-18541",3279,25);
+		 	 R_Date("AAR-18542",3226,25);
+		 	 Date("HESTE2");
+		 };
+		 Boundary("B_End HESTE2");
+	 };
+};

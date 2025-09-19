@@ -1,0 +1,2 @@
+PhaseID	From_68.3	To_68.3	From_95.4	To_95.4	mean	sigma	median	YearType
+STARC1	7667	7506	7707	7456	7582	70	7583	calBP

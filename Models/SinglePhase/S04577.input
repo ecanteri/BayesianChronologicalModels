@@ -1,0 +1,24 @@
+Plot(){
+	 Outlier_Model("ABIESPE",Exp(0.005000,-120,0),U(0,1),"t");
+	 Outlier_Model("FRAXSPE",Exp(0.020000,-300,0),U(0,0),"t");
+	 Outlier_Model("wood",Exp(0.029412,-20,0),U(0,2),"t");
+	 Outlier_Model("QUERSPE",Exp(0.002994,-200,0),U(0,1),"t");
+	 Outlier_Model("ALNUSPE",Exp(0.050000,-120,0),U(0,0),"t");
+	 Curve("IntCal20","/Users/msb290/Library/CloudStorage/OneDrive-UniversityofCopenhagen/PhaseDating/OxCal/bin/intcal20.14c");
+	 Sequence(){
+		 Boundary("B_Start TY");
+		 Phase("TY"){
+		 	 R_Date("H-61/149",5222,130) {Outlier(1, "ABIESPE");};
+		 	 R_Date("KN-I.597",5030,45) {Outlier(1, "FRAXSPE");};
+		 	 R_Date("LJ-1265",4982,40) {Outlier(1, "wood");};
+		 	 R_Date("LJ-1279",4938,40) {Outlier(1, "wood");};
+		 	 R_Date("K-540",4910,100) {Outlier(1, "QUERSPE");};
+		 	 R_Date("B-45",4780,150) {Outlier(1, "QUERSPE");};
+		 	 R_Date("K-539",4750,100) {Outlier(1, "ALNUSPE");};
+		 	 R_Date("B-44",4690,200) {Outlier(1, "wood");};
+		 	 R_Date("B-43",4690,150) {Outlier(1, "ALNUSPE");};
+		 	 Date("TY");
+		 };
+		 Boundary("B_End TY");
+	 };
+};
